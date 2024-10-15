@@ -1,0 +1,400 @@
+fileVersion: 1
+id: 3ae61a34-6901-419f-8e92-762301c64772
+name: ITEM_MASTER
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: PH_RAW_VIP
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41c8be52-b9ce-46d6-b5e3-c30ce2b51afe
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FILE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d86bc851-29d7-4878-9fbd-a45ef56eddb6
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _LINE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c80860a8-1bcf-43cf-b76b-2c19b4ce690c
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39253534-7f14-4045-b213-7defc31dc74b
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28f5fff6-d413-4e4b-8ab9-6a5a6f999310
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: RECORD_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd2decba-79c6-4723-88b7-ffe885759b53
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SUPPLIER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d5d78d0-72b2-4e97-804c-b84e1c3c33c1
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DISTRIBUTOR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 686ee71c-a287-4ef9-a06f-7c3f477443a5
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SUPPLIER_ITEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 517074cf-dd7e-423a-87e3-9e62d273050f
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DIST_ITEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe04dbda-3101-40dd-8624-59a42194c447
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 156dc70c-2249-4948-ac2a-450d36cfbd77
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: GTIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffa2e1c5-f15d-4633-889c-ea9f6614ae4a
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: STATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cdc879e-6c69-4fd5-ab3b-a685d2b43509
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SELL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03bae188-bb79-4aca-83d9-956bd636d51f
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: UNIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c48e96b0-ebec-4fc1-9017-670ca44287df
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CREATION_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12ec689f-e89d-49d6-8e49-7d7dc19e1df1
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DIST_ITEM_SIZE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32c91fb7-213d-43f6-a7a3-48295437b444
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: PROOF
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 515402aa-f35a-462f-9df3-b579fe74518b
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: VINTAGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: def5568a-77b4-4f03-87ff-5b16620cf1a9
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DIST_ITEM_GTIN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30ab096c-58e6-413c-8ad6-9cbf03fff01e
+          stepCounter: 3ae61a34-6901-419f-8e92-762301c64772
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: REPACK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('PH_RAW_VIP', 'ITEM_MASTER') }}
+  name: ITEM_MASTER
+  schema: ""
+  sqlType: Source
+  table: ITEM_MASTER
+  type: sourceInput
+  version: 1
+type: Node

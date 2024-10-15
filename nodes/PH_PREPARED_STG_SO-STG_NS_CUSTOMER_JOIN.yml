@@ -1,0 +1,472 @@
+fileVersion: 1
+id: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+name: STG_NS_CUSTOMER_JOIN
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bedc4b16-8e7c-4b76-b463-03be010ea45b
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e297836b-d5c5-49f0-aea4-7e003eceae2d
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf53f56c-517e-4968-9d75-166b299bf931
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(664)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 50669408-a3fe-4a17-9a5f-0423d8bdb017
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c41c9bd-e367-4d71-ae73-25aafe7088f8
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(14400)
+        description: ""
+        name: NAME_ALT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e64626f-f009-48aa-82fe-3e947f4c9990
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e1870ce-3cf4-435b-ac29-774e47c0cc88
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CONTACT_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1ca9aa42-3ea2-473a-bcfd-378dc9e2bfb9
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: CONCAT("STG_NS_CUSTOMER"."FIRSTNAME", ' ', "STG_NS_CUSTOMER"."LASTNAME")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 135369f6-e284-4353-b0af-9f2d67ec1203
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(2032)
+        description: ""
+        name: CONTACT_EMAIL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: debdc95e-c7e0-40f1-8485-a08637758c81
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a80a80d1-f624-4211-8d2d-fed9407cd17f
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf442c8f-6c3a-418a-a75f-b0bbd15726a7
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef0b72a3-f933-411d-a230-bbefe10becea
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BILLING_ADDRESS_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d07fa583-8bef-45b7-958d-b2297fb60ec9
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38bb2da2-803e-46bb-bffc-14dbd2e7e6ff
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_STREET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_BILLING\".\"ADDR1\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a12168c-a734-4a45-83f1-318deae7ccb7
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_BILLING\".\"CITY\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c80822c5-6ba8-4e94-99cc-4d1e8c47d25a
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_STATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_BILLING\".\"STATE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0432dfb4-9ff7-4205-bdb8-4c3171dc5ccc
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_ZIP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_BILLING\".\"ZIP\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4748cc97-79c4-462f-b5f9-ac9f84f779a1
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SHIPPING_ADDRESS_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35b8550f-869d-407c-84c1-9549b4d354f8
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fea82fe9-50d1-4b61-85f0-85ca2506864b
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_STREET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_SHIPPING\".\"ADDR1\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f3de3a1-93fa-4581-a7cc-033043e17adc
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_SHIPPING\".\"CITY\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4babea6-0904-4b5b-b8ef-d4984bd4d824
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_STATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_SHIPPING\".\"STATE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a9c3be3-3dba-4933-99bf-824d966b5ea5
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_ZIP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_SHIPPING\".\"ZIP\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fa02baa-e984-4128-80e4-ed4855cb6f37
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f7027df-a04a-4b08-b0f9-6eb8d7377e07
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d3faba1-d8c6-49be-a1ba-19acba14b0fc
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(2400)
+        description: ""
+        name: CUSTENTITY_AFFILIATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0676f788-8d26-4732-98f3-d12608513c58
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 831e15dd-ddc2-4fb4-8ae0-8c4cbea379d0
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CUSTENTITY_CUST_SALES_CHANNEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c847fc15-9d64-4d7c-80d3-a5acb9f66cdd
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30da9af7-603e-4eef-a209-5212ea87fcb7
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d07354a-8f9a-46cd-bddb-b66bef1802cf
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29a3209f-b5f7-4c50-b4ba-b198f6257a31
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(2040)
+        description: ""
+        name: EXTERNALID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c58d2300-ad93-43df-b8fa-e0bfce10c746
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb76796e-4e15-47e3-b64f-7f62e904832b
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(664)
+        description: ""
+        name: ENTITYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8dd4e4d-9539-4475-8cb8-11e36965fc3a
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9819227e-b242-4aef-a8be-a2e958edd3fa
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ENTITYSTATUS_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a2322ce0-3c53-4528-9b19-51fc44ba552c
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 100568f4-8713-4931-9cd5-0db892592fbc
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(1592)
+        description: ""
+        name: ENTITYSTATUS_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c50e4a58-5d72-47f7-8bc0-dbfea2922765
+                stepCounter: b2b1b366-4703-4eff-8357-36cd1c4cd9af
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5938f13-7089-4d8c-b0c5-40dd830be6a9
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ISBUDGETAPPROVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52e6ac9a-ab19-4704-ad88-e38104a9e749
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42a8dbf3-5826-4da6-9bd0-733614976021
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ISINACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7dc1acae-ebc1-4a72-a54d-856f947a4570
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b5b9b0d-06b3-432d-a14f-101956dbd758
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: DUPLICATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6d304101-56d0-4f36-838b-9ba0b28945da
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc192e66-852d-4b1d-960f-81712e563b0c
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_CREATED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fc6d2b6-1d30-4483-b394-81c75c95a1d5
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 177971cd-9b99-41cd-be80-38a3d845a608
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_CLOSED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 233e60bf-73b5-4459-ba79-e7e266ca953b
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d049b0d2-7f12-48e8-a3e2-cefcf6bad325
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a662adfa-4fa4-40c3-903f-0fd17f541835
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 54e1f03b-1a3b-460b-885d-e8bca31508c3
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c65d107e-9323-42e6-85a7-2df8f8e22627
+                stepCounter: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_NS_CUSTOMER: bc56b8f8-f864-4b7e-9b69-4547e5842f44
+          STG_NS_ENTITYADDRESS_BILLING: 90995ba6-9317-40c0-a147-16062aa39fe6
+          STG_NS_ENTITYADDRESS_SHIPPING: 90995ba6-9317-40c0-a147-16062aa39fe6
+          STG_NS_ENTITYSTATUS: b2b1b366-4703-4eff-8357-36cd1c4cd9af
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_CUSTOMER
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_ENTITYADDRESS
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_ENTITYSTATUS
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_CUSTOMER') }} "STG_NS_CUSTOMER"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_ENTITYADDRESS') }} "STG_NS_ENTITYADDRESS_BILLING"
+                ON "STG_NS_CUSTOMER"."DEFAULTBILLINGADDRESS" = "STG_NS_ENTITYADDRESS_BILLING"."NKEY"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_ENTITYADDRESS') }} "STG_NS_ENTITYADDRESS_SHIPPING"
+                ON "STG_NS_CUSTOMER"."DEFAULTSHIPPINGADDRESS" = "STG_NS_ENTITYADDRESS_SHIPPING"."NKEY"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_ENTITYSTATUS') }} "STG_NS_ENTITYSTATUS"
+                ON "STG_NS_CUSTOMER"."ENTITYSTATUS" = "STG_NS_ENTITYSTATUS"."KEY"
+        name: STG_NS_CUSTOMER_JOIN
+        noLinkRefs: []
+  name: STG_NS_CUSTOMER_JOIN
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

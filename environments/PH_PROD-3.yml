@@ -1,0 +1,26 @@
+fileVersion: 1
+id: "3"
+mappingDefinitions:
+  PH_PREPARED_SO:
+    database: PH_PROD_EDW
+    schema: SO
+  PH_PREPARED_STG_SO:
+    database: PH_PROD_EDW
+    schema: STG_SO
+  PH_RAW_NS:
+    database: PH_RAW
+    schema: NS
+  PH_RAW_NS_NETSUITE:
+    database: PH_RAW
+    schema: NS_NETSUITE
+  PH_RAW_NS_NETSUITE_SOURCE:
+    database: PH_RAW
+    schema: NS_NETSUITE_SOURCE
+  PH_RAW_SMWE:
+    database: ""
+    schema: ""
+  PH_RAW_VIP:
+    database: ""
+    schema: ""
+name: PH_PROD
+type: Environment

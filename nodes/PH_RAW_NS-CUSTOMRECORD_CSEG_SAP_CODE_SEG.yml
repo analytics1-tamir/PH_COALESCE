@@ -1,0 +1,495 @@
+fileVersion: 1
+id: 92818061-50cc-406e-b679-ca657c7384bb
+name: CUSTOMRECORD_CSEG_SAP_CODE_SEG
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: PH_RAW_NS
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bdf6bf9-ccba-4b71-93bd-b1194b2643d2
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5eb3acf2-368d-4753-bd62-72c8612a59f7
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: ABBREVIATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e6e7349-d8f7-40e2-8682-a79aef2cfa01
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: CREATED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: feb07316-443f-48bc-99be-7318b947e7a8
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD157
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1866230-9bd8-4429-931a-19a4221c9e3f
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_BRAND_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a3eaf3a-8c50-4b0f-b3db-0e131d0333f6
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 625be9b1-6b66-4a4b-a2ef-b0256883c7e3
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_PRICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58fb6cf2-6c3b-4050-837d-935ebfc52666
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_PRODUCT_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43afccba-0fce-4ce0-8f6a-580eb7ff83f9
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_PRODUCT_GROUP_DESC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e24b009-0361-4918-be6a-166553e81125
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_SAP_PROG_LAB
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1c38a67-7ae2-4f4c-ada0-8cc5a5c7a658
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_SC_SUB_CAT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ec293d0-0065-4da2-a56e-0f5fb09c1079
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_VARIETAL_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7e417b8-8d09-4c10-9199-48b5e8845d0f
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: CUSTRECORD_VARIETAL_DESC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01e27a7f-f6c7-4a19-b33a-5a0397d63bbb
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: EXTERNALID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b87b91d-a0b9-4981-b43b-f9b2c33bd0c5
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: ISINACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: be091db0-7523-40ba-b7fb-2c5b940660d0
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: LASTMODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fadf8379-712d-4898-b6cc-f9082226a53a
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LASTMODIFIEDBY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 494dfe63-c6e9-4b48-8249-4623d2e80830
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73a4c6d9-8903-4878-917e-997408a7c023
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: OWNER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbde6aea-686f-4391-88cc-f9bda0fc4bdd
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PARENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6232c46-e676-4657-b571-f86e727d1dc9
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: RECORDID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66d47cd7-0aca-4d96-9e3d-348a1edc84f5
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: VARCHAR(2400)
+        defaultValue: ""
+        description: ""
+        name: SCRIPTID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c40bfa39-2042-49ed-abcd-1dd98d29586a
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c404409-58fa-4493-9eaa-58021bb5a0cb
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1df230a1-ad8e-46f4-a70f-bc8e41d4c31b
+          stepCounter: 92818061-50cc-406e-b679-ca657c7384bb
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('PH_RAW_NS', 'CUSTOMRECORD_CSEG_SAP_CODE_SEG') }}
+  name: CUSTOMRECORD_CSEG_SAP_CODE_SEG
+  schema: ""
+  sqlType: Source
+  table: CUSTOMRECORD_CSEG_SAP_CODE_SEG
+  type: sourceInput
+  version: 1
+type: Node

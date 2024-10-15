@@ -1,0 +1,229 @@
+fileVersion: 1
+id: 9c3801c4-10eb-4b7b-9226-8952e4030114
+name: ENTITYSTATUS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: PH_RAW_NS
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5fc625b-913b-4906-9279-bce7594736bd
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: KEY
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d37c9f9-5e99-4850-b167-5f5fecd1f167
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: VARCHAR(1592)
+        defaultValue: ""
+        description: ""
+        name: DESCR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 268182f3-afde-4466-98c4-e0996fe76434
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: VARCHAR(240)
+        defaultValue: ""
+        description: ""
+        name: ENTITYTYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc699be3-6b75-45a9-a560-c29074d778af
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: INACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75a9ca76-d3fa-44f7-94d7-3ebe56f6d73d
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: INCLUDEINLEADREPORTS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7855e6e-e6ec-4768-a83e-942b207affc1
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: VARCHAR(1592)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e15dce5-5510-4f3d-ae0c-955f56de51e0
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PROBABILITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a49dfb9a-1ea4-4d5f-8df8-dbf0615f98df
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: READONLY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb02218c-9860-4ce1-8067-7b5f332cf442
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2ae483e-b923-4a0e-8de5-a864104dfb01
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dff5abf-86b1-432b-815f-bfedafde04e0
+          stepCounter: 9c3801c4-10eb-4b7b-9226-8952e4030114
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('PH_RAW_NS', 'ENTITYSTATUS') }}
+  name: ENTITYSTATUS
+  schema: ""
+  sqlType: Source
+  table: ENTITYSTATUS
+  type: sourceInput
+  version: 1
+type: Node
