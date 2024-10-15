@@ -75,8 +75,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 519d91e8-c093-4a0b-ae3a-c8bdd5d132bd
-                stepCounter: c4dd8159-00d5-4ca0-86f6-99a049ad4679
+              - columnCounter: 15bd92a9-71ab-47fc-894a-a166bcf9f374
+                stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -95,8 +95,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 094dc700-f0ce-4447-808d-a901b4d1df39
-                stepCounter: c4dd8159-00d5-4ca0-86f6-99a049ad4679
+              - columnCounter: 7031ab9c-1588-43f2-85b0-2772b0f53927
+                stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -115,8 +115,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 2a5412e3-37c3-4fd5-addb-4d2d31c61c61
-                stepCounter: c4dd8159-00d5-4ca0-86f6-99a049ad4679
+              - columnCounter: e0935df4-a1c4-4364-8b1f-22f39861e81c
+                stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
             transform: ""
         systemColumnType: None
       - appliedColumnTests: {}
@@ -641,26 +641,26 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: ISV_NAME
+        name: NAME_ISV
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 3e2d384c-a5da-4455-a13e-1e68687fcaed
-                stepCounter: c4dd8159-00d5-4ca0-86f6-99a049ad4679
+              - columnCounter: 1f50e2e2-3017-4b40-bdc4-57ddcc6bef72
+                stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
             transform: ""
         systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
-          DIM_DISTRIBUTOR: c4dd8159-00d5-4ca0-86f6-99a049ad4679
+          DIM_CUSTOMER: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
           DIM_ITEM: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
           STG_VIP_DEPLETION: 77562bf7-160d-4e03-9ef6-cc4070583870
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: PH_PREPARED_STG_SO
-            nodeName: DIM_DISTRIBUTOR
+            nodeName: DIM_CUSTOMER
           - locationName: PH_PREPARED_STG_SO
             nodeName: DIM_ITEM
           - locationName: PH_PREPARED_STG_SO
@@ -668,8 +668,8 @@ operation:
         join:
           joinCondition: |-
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_VIP_DEPLETION') }} "STG_VIP_DEPLETION"
-            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_DISTRIBUTOR') }} "DIM_DISTRIBUTOR"
-                ON "STG_VIP_DEPLETION"."DISTRIBUTOR" = "DIM_DISTRIBUTOR"."DISTRIBUTOR"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_CUSTOMER') }} "DIM_CUSTOMER"
+                ON "STG_VIP_DEPLETION"."DISTRIBUTOR" = "DIM_CUSTOMER"."ID_VIP"
             LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_ITEM') }} "DIM_ITEM"
                 ON "STG_VIP_DEPLETION"."DISTRIBUTOR_ITEM_NUMBER" = "DIM_ITEM"."ITEM_NUMBER"
         name: STG_VIP_DEPLETION_JOIN

@@ -73,6 +73,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 16c5fee7-5f32-4eee-945e-a9ba2281d85d
+          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: DISTRIBUTOR_NAME_ISV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37445a74-ba97-470e-8694-9e82adc96437
+                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 1e837ec4-5454-43a9-ad0f-83b71b47809f
           stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
         config: {}
@@ -601,20 +615,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: a01aa15e-04a6-433c-8a36-a8ace878a56c
-                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 16c5fee7-5f32-4eee-945e-a9ba2281d85d
-          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
-        config: {}
-        dataType: VARCHAR(256)
-        description: ""
-        name: ISV_NAME
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 37445a74-ba97-470e-8694-9e82adc96437
                 stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
             transform: ""
       - acceptedValues:

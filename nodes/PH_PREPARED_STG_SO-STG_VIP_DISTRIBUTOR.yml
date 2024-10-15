@@ -45,13 +45,18 @@ operation:
               - columnCounter: bc919d92-e2b6-4e75-b185-22534e7b0096
                 stepCounter: cc95db06-3879-4c08-ab21-a7dba89ed108
             transform: ""
-      - appliedColumnTests: {}
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
         columnReference:
-          columnCounter: d392ca16-3fb1-4387-9343-9137a52ef0fa
+          columnCounter: b751713d-069d-4e48-831c-55e62ecc8f0f
           stepCounter: 3e136df4-0c6d-4722-9fd8-aec23e1e3f51
         config: {}
         dataType: VARCHAR(256)
+        defaultValue: ""
         description: ""
+        keyColumnType: None
         name: SUPPLIER_ID
         nullable: true
         sourceColumnReferences:
@@ -59,6 +64,7 @@ operation:
               - columnCounter: 55a61e41-e7ff-4c1c-90f1-b8d1e2162c6e
                 stepCounter: cc95db06-3879-4c08-ab21-a7dba89ed108
             transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 9d74fa85-24c9-48c4-ab6f-af1d334c6433
@@ -213,13 +219,18 @@ operation:
               - columnCounter: 35b46c9c-ad0b-47bc-8592-368d2fc2bf61
                 stepCounter: cc95db06-3879-4c08-ab21-a7dba89ed108
             transform: ""
-      - appliedColumnTests: {}
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
         columnReference:
-          columnCounter: 19c1b258-f75f-4816-92a2-cd9e94d17558
+          columnCounter: 57e19d96-859d-4f8f-b5d3-08e9cfc4df5a
           stepCounter: 3e136df4-0c6d-4722-9fd8-aec23e1e3f51
         config: {}
         dataType: NUMBER(38,0)
+        defaultValue: ""
         description: ""
+        keyColumnType: None
         name: PHASE
         nullable: true
         sourceColumnReferences:
@@ -227,12 +238,13 @@ operation:
               - columnCounter: 77a6277a-6537-44ac-afa8-f1081bdbdbf9
                 stepCounter: cc95db06-3879-4c08-ab21-a7dba89ed108
             transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c5169232-aee7-498c-b663-01e041311428
           stepCounter: 3e136df4-0c6d-4722-9fd8-aec23e1e3f51
         config: {}
-        dataType: DATE
+        dataType: VARCHAR(256)
         description: ""
         name: LAST_AUDIT_MONTH_EOM
         nullable: true
