@@ -78,6 +78,34 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: e1548ab7-5a94-4526-873c-acf6072a9e9c
+          stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: ID_COMBINED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b76db757-21eb-4e08-9135-8c3f792b009b
+                stepCounter: e75c7206-5e77-4f0c-826c-255065feeeee
+            transform: COALESCE(TO_VARCHAR("STG_NS_CUSTOMER_JOIN"."ID_NS"), TO_VARCHAR("STG_NS_CUSTOMER_JOIN"."ID_VIP"))
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68c4ac96-5e88-421e-8eec-1655a5337594
+          stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: ID_NAME_CONCAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b76db757-21eb-4e08-9135-8c3f792b009b
+                stepCounter: e75c7206-5e77-4f0c-826c-255065feeeee
+            transform: CONCAT(COALESCE(TO_VARCHAR("STG_NS_CUSTOMER_JOIN"."ID_NS"), TO_VARCHAR("STG_NS_CUSTOMER_JOIN"."ID_VIP")), ' - ', "STG_NS_CUSTOMER_JOIN"."NAME")
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 15bd92a9-71ab-47fc-894a-a166bcf9f374
           stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
         config: {}

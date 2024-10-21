@@ -17,26 +17,12 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 517b677f-0f37-4ee5-8413-4a9764553602
-          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: PARENT_ID
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 82b936cd-2ee3-4209-80d6-910f4c14379f
-                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 93aa19d6-e05c-4e4c-8d01-39f865da96fe
           stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
         config: {}
         dataType: VARCHAR(256)
         description: ""
-        name: DISTRIBUTOR
+        name: ID_VIP
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -50,11 +36,25 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: ALT_DISTRIBUTOR
+        name: ID_VIP_ALT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 784de661-c1b8-49bb-a300-2932879cbe5d
+                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 517b677f-0f37-4ee5-8413-4a9764553602
+          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_VIP_PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 82b936cd-2ee3-4209-80d6-910f4c14379f
                 stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
             transform: ""
       - appliedColumnTests: {}
@@ -118,7 +118,7 @@ operation:
           columnCounter: 9a6ceb39-48d8-4468-89cd-fd8439d9026b
           stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR
         description: ""
         name: SUPPLIER_ITEM_NUMBER
         nullable: true
@@ -153,20 +153,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 096ec2dc-30e2-45b1-8ecf-623d8eae229b
-                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 4ce82ebb-90db-4b0f-b34e-9909cdb02fda
-          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
-        config: {}
-        dataType: DATE
-        description: ""
-        name: DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: fc890d5b-40cd-46d9-8e2d-093cfd4c4f48
                 stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
             transform: ""
       - appliedColumnTests: {}
@@ -414,11 +400,25 @@ operation:
         config: {}
         dataType: FLOAT
         description: ""
-        name: TOTAL_SALES
+        name: TOTAL_SALES_SU
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 8a528ec8-66c3-45e9-810e-9187852bad06
+                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c5d21d1-d6d0-46d6-b595-c5176c908809
+          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: TOTAL_SALES_FCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bdc4ba92-a9f4-4460-bd9a-d9ed7e987b47
                 stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
             transform: ""
       - appliedColumnTests: {}

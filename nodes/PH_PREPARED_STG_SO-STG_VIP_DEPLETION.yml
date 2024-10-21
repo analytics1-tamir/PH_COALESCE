@@ -64,7 +64,7 @@ operation:
           columnCounter: ed1864f2-e1eb-40ca-ab8b-46378ba7eddd
           stepCounter: 77562bf7-160d-4e03-9ef6-cc4070583870
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR
         description: ""
         name: SUPPLIER_ITEM_NUMBER
         nullable: true

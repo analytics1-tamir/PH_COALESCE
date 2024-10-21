@@ -663,20 +663,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 12e62452-f297-42af-a6bd-929b80fe7591
-          stepCounter: f2ca4692-4055-46e4-b278-d9cc9fe0ffd7
-        config: {}
-        dataType: FLOAT
-        description: ""
-        name: ALCOHOL_PERCENTAGE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 044465aa-6325-4d1c-83c9-b8fc1991003c
-                stepCounter: 064383a7-cd02-4489-9010-f403a5a10ccf
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 0edc46f1-6bd6-4989-8432-e0e8f1bc7d19
           stepCounter: f2ca4692-4055-46e4-b278-d9cc9fe0ffd7
         config: {}
@@ -1172,7 +1158,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: WEIGHT_UNIT
+        name: WEIGHT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -1186,7 +1172,7 @@ operation:
         config: {}
         dataType: VARCHAR(32000)
         description: ""
-        name: WEIGHT_UNITS
+        name: WEIGHT_FORMAT
         nullable: true
         sourceColumnReferences:
           - columnReferences:

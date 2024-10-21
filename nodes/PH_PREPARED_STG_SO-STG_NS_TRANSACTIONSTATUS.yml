@@ -1,0 +1,112 @@
+fileVersion: 1
+id: 5751d605-63d5-4916-9a19-fbaf26bc06b8
+name: STG_NS_TRANSACTIONSTATUS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0c24a72-222d-432a-bfd4-0b6e18b3569d
+          stepCounter: 5751d605-63d5-4916-9a19-fbaf26bc06b8
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b7dc35f-b695-411b-87e7-31b57c3aff81
+                stepCounter: 1d68aa1b-3706-4a76-aa59-3d77ed720778
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09837592-905d-4fa0-82e6-55eb001ead1c
+          stepCounter: 5751d605-63d5-4916-9a19-fbaf26bc06b8
+        config: {}
+        dataType: VARCHAR(32000)
+        description: ""
+        name: FULLNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79aad46d-4ed6-49ab-9da9-06c698cb07ff
+                stepCounter: 1d68aa1b-3706-4a76-aa59-3d77ed720778
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7978e4a-1780-4599-bd67-2a9f1eaa9f9e
+          stepCounter: 5751d605-63d5-4916-9a19-fbaf26bc06b8
+        config: {}
+        dataType: VARCHAR(32000)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b27e3f0-0305-4516-9997-66e45af6baee
+                stepCounter: 1d68aa1b-3706-4a76-aa59-3d77ed720778
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba0597c7-f57e-457b-aa12-6bc69bcd0284
+          stepCounter: 5751d605-63d5-4916-9a19-fbaf26bc06b8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TRANCUSTOMTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3c7ee89c-5a3b-40a8-9bc6-8e07a34b3e38
+                stepCounter: 1d68aa1b-3706-4a76-aa59-3d77ed720778
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d03546ba-33fb-440c-b3c0-c6f0369990c2
+          stepCounter: 5751d605-63d5-4916-9a19-fbaf26bc06b8
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: TRANTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a2c3131-f780-4ff1-9896-11603273385a
+                stepCounter: 1d68aa1b-3706-4a76-aa59-3d77ed720778
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          TRANSACTIONSTATUS: 1d68aa1b-3706-4a76-aa59-3d77ed720778
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_NS
+            nodeName: TRANSACTIONSTATUS
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_NS', 'TRANSACTIONSTATUS') }} "TRANSACTIONSTATUS"
+            WHERE "TRANSACTIONSTATUS"."_FIVETRAN_DELETED" = FALSE
+        name: STG_NS_TRANSACTIONSTATUS
+        noLinkRefs: []
+  name: STG_NS_TRANSACTIONSTATUS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

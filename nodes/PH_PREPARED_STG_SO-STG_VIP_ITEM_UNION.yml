@@ -1262,7 +1262,7 @@ operation:
         config: {}
         dataType: VARCHAR
         description: ""
-        name: WEIGHT_UNIT
+        name: WEIGHT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -1276,7 +1276,7 @@ operation:
         config: {}
         dataType: VARCHAR
         description: ""
-        name: WEIGHT_UNITS
+        name: WEIGHT_FORMAT
         nullable: true
         sourceColumnReferences:
           - columnReferences:

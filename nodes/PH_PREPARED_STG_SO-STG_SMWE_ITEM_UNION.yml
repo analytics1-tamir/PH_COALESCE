@@ -1363,7 +1363,7 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: WEIGHT_UNIT
+        name: WEIGHT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -1383,7 +1383,7 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: WEIGHT_UNITS
+        name: WEIGHT_FORMAT
         nullable: true
         sourceColumnReferences:
           - columnReferences:

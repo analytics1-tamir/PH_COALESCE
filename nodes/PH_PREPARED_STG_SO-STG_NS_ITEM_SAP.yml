@@ -675,24 +675,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0df80c2d-6b9d-42d9-8639-d50f55559a67
-          stepCounter: c7a5f1fe-52c0-4c16-a9af-62bbd7fbd4fe
-        config: {}
-        dataType: FLOAT
-        description: ""
-        name: CUSTITEM_ALC_PERCENTAGE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 63c1d78c-6be5-411b-9f69-1124f1affa46
-                stepCounter: 7702dbf5-4c02-47d2-8ff2-ccfbb9550393
-            transform: ""
-          - columnReferences:
-              - columnCounter: 00541c31-fc85-4eb9-bcb0-9885678b4717
-                stepCounter: 7972ed29-9d1b-425a-9211-31fe8e4ea845
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: e4e99270-d2ea-4794-b1ad-469bf72698fe
           stepCounter: c7a5f1fe-52c0-4c16-a9af-62bbd7fbd4fe
         config: {}

@@ -1,6 +1,6 @@
 fileVersion: 1
 id: ac292339-1a85-4f83-9273-66fcd4eb8bda
-name: STG_TRANSACTION
+name: STG_NS_TRANSACTION
 operation:
   config:
     insertStrategy: INSERT
@@ -2047,9 +2047,9 @@ operation:
           joinCondition: |-
             FROM {{ ref('PH_RAW_NS', 'TRANSACTION') }} "TRANSACTION"
             WHERE "TRANSACTION"."_FIVETRAN_DELETED" = FALSE
-        name: STG_TRANSACTION
+        name: STG_NS_TRANSACTION
         noLinkRefs: []
-  name: STG_TRANSACTION
+  name: STG_NS_TRANSACTION
   overrideSQL: false
   schema: ""
   sqlType: Stage

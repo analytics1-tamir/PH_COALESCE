@@ -17,10 +17,10 @@ mappingDefinitions:
     database: PH_RAW
     schema: NS_NETSUITE_SOURCE
   PH_RAW_SMWE:
-    database: ""
-    schema: ""
+    database: PH_RAW
+    schema: SMWE
   PH_RAW_VIP:
-    database: ""
-    schema: ""
+    database: PH_RAW
+    schema: VIP
 name: PH_PROD
 type: Environment
