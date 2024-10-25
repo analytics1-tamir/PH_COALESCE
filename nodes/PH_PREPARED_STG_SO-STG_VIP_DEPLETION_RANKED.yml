@@ -567,7 +567,7 @@ operation:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: ROW_NUMBER() OVER (PARTITION BY "STG_VIP_DEPLETION"."DISTRIBUTOR_ITEM_NUMBER", "STG_VIP_DEPLETION"."DEPLETION_PERIOD" ORDER BY "STG_VIP_DEPLETION"."DEPLETION_PERIOD", "STG_VIP_DEPLETION"."DATE" DESC)
+            transform: DENSE_RANK() OVER (PARTITION BY "STG_VIP_DEPLETION"."DEPLETION_PERIOD", "STG_VIP_DEPLETION"."DISTRIBUTOR", "STG_VIP_DEPLETION"."SUPPLIER_ITEM_NUMBER" ORDER BY "STG_VIP_DEPLETION"."DEPLETION_PERIOD", "STG_VIP_DEPLETION"."DATE" DESC)
         systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []

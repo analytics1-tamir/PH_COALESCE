@@ -395,20 +395,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 67073cf6-8197-4305-8653-f031a3728844
-          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
-        config: {}
-        dataType: FLOAT
-        description: ""
-        name: TOTAL_SALES_SU
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 8a528ec8-66c3-45e9-810e-9187852bad06
-                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 7c5d21d1-d6d0-46d6-b595-c5176c908809
           stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
         config: {}
@@ -419,6 +405,20 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: bdc4ba92-a9f4-4460-bd9a-d9ed7e987b47
+                stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67073cf6-8197-4305-8653-f031a3728844
+          stepCounter: e220d189-c9e3-4b66-a53b-d2476d80e21e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: TOTAL_SALES_CASES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8a528ec8-66c3-45e9-810e-9187852bad06
                 stepCounter: 3b0e9d47-9302-4680-849d-d40f683c6073
             transform: ""
       - appliedColumnTests: {}
