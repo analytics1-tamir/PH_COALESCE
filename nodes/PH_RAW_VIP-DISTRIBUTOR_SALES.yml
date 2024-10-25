@@ -1,0 +1,875 @@
+fileVersion: 1
+id: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+name: DISTRIBUTOR_SALES
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: PH_RAW_VIP
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab65e29-0347-45d3-b90e-caf5ce51ea1b
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FILE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 86618c4c-46a3-4155-875d-9f9a2d46eba1
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _LINE
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03a25d91-c2a8-4a84-979a-83867da8c825
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbaddeec-baef-4bf3-8a3f-0a07875214e0
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01aaccff-a5a5-4351-934d-b5ded6c18cc1
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: RCD_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85363312-331c-4ade-ab46-be6dcd2e71af
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DIST_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 425429a6-2a23-494a-86a0-a65e7cecaab4
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: RESERVED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2fd8cc2-f1a0-4158-bea0-acd11d052f19
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INVOICE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 010bbd37-9eb7-44f4-9697-741eaa77bc2d
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: INVOICE_NBR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12f8c1d4-22f9-4480-944c-18fd00ac6c39
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ACCT_NBR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6712736-bedc-4997-bfb8-4a086583ecd4
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SUPP_ITEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf610128-28f9-406e-8160-642d267bd2ad
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: QTY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9186e178-bb87-4ea0-a3ed-8af714958baa
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: UOM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b8a766b-fa1d-4a9f-b1f2-3681306527ed
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: FRONT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6316455e-0513-466f-a479-3831c279e4f0
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: FL_UOM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5adaae99-a4ae-4795-a5a5-18dedc395695
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: NET_PRICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7274ba61-9627-4947-a9b0-4d1b0f16957b
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: NET_UOM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 571ae17d-84bd-46fd-800a-936afa4240b3
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: FROM_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bf2ba91-7e01-4e14-bd83-648cd5e5cd70
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: TO_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9afb72ad-89b0-4024-8124-eb648ac9d819
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: VIP_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f2ebf58-3cf9-4994-8f7a-bd0c880e3805
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DIST_ITEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e471e45-81e6-4c13-95d7-3a5b54260dc7
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: NET_PRICE_4
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a2aa68cc-37e9-49b0-9cc2-9c24d330cc57
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: DEPOSIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74fd1f6a-2c03-4fee-945e-d64f8933bc71
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: CRV
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac8aefba-6e17-4880-b0a5-3240de345cf3
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LOCAL_TAX
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2bc9047-bb35-4284-8b5f-f928f915e1f4
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: ADTL_CHRG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a810db0-71b5-48f1-93dd-c42383b0ec92
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: SLS_REP_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9999b3f0-a47a-4a6c-bef9-18bb45985197
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: REPACK
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1b95615-2e7d-4500-b2e4-017947241186
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: WHSE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bedf82c9-05ea-461f-a5f3-d073bfb5b3cf
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: TRANS_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96219688-5065-4db6-bda6-d3d658c1d798
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: PROMO_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44a94f1d-886d-4a02-af38-52c69b898ae8
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PROMO_GROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a234575c-5e09-4f1e-bdeb-4a55fab4391f
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: EXT_DIST_DISC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb4bf88f-1af4-4f7a-85e9-ece0b06b9e27
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: SUPP_DEP_ALLOW
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a68fac32-ed83-4449-b6ab-486f68330a75
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: SPLIT_CASE_CHRG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ee43086-52ed-427e-818e-a6c990bd40db
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: COMBO
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60495577-da87-47bf-96d5-bc066bd928e6
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: FREE_GOOD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d150f40-8f9d-4a94-be51-c1696c5c68d9
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: DUTY_FREE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ea184ff-4bb7-44bf-baa2-3082e6a953b9
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ORDER_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4541a43d-e452-4ad6-8119-7e6a993e5f49
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ORDER_QTY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0cf2ba24-3331-4c29-9b32-8ed0f10b1a77
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: ORDER_UOM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 285e9b2f-1ea6-4b36-af92-f0988819ca3c
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INVOICE_LINE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d50f8d18-197b-43b2-b685-88226ae4e2a9
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: REFERENCE_INVOICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab75c766-75bb-42ab-8c37-29d764b37d6a
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: EXTEND_FRONT_LINE_PRICE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66568372-5aaa-44f8-96ed-8d59c256a726
+          stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DEPLETION_PERIOD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('PH_RAW_VIP', 'DISTRIBUTOR_SALES') }}
+  name: DISTRIBUTOR_SALES
+  schema: ""
+  sqlType: Source
+  table: DISTRIBUTOR_SALES
+  type: sourceInput
+  version: 1
+type: Node
