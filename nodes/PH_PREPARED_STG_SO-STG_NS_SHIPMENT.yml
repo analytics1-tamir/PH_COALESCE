@@ -31,6 +31,46 @@ operation:
               - columnCounter: 12828497-01ad-4086-b4d1-c0588ab43a0d
                 stepCounter: ac292339-1a85-4f83-9273-66fcd4eb8bda
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 732046e2-74f7-4384-92ad-0d589e5b7f4b
+          stepCounter: 7b5beb0f-ba85-4559-9e18-373f33086f1c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ID_DISTRIBUTOR_NS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c244eaa-513b-42b4-a18f-912f9b332670
+                stepCounter: ac292339-1a85-4f83-9273-66fcd4eb8bda
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 910929e2-b16c-4a2d-9597-65c65a728670
+          stepCounter: 7b5beb0f-ba85-4559-9e18-373f33086f1c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ID_PARENT_NS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 51848f16-8353-4b58-91be-2b77b27243b4
+                stepCounter: c1c48423-16e1-4106-a0fc-c37ba5e63f29
+            transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 840a24d3-18ef-467e-a22e-e5d2a367aa3b
@@ -279,7 +319,8 @@ operation:
                 ON "STG_NS_TRANSACTION"."STATUS" = "STG_NS_TRANSACTIONSTATUS"."ID" AND
                    "STG_NS_TRANSACTION"."TYPE" = "STG_NS_TRANSACTIONSTATUS"."TRANTYPE" AND
                    "STG_NS_TRANSACTION"."CUSTOMTYPE" = "STG_NS_TRANSACTIONSTATUS"."TRANCUSTOMTYPE"
-            WHERE "STG_NS_TRANSACTION"."ABBREVTYPE" = 'ITEMSHIP'
+            WHERE "STG_NS_TRANSACTION"."ABBREVTYPE" = 'ITEMSHIP' AND
+                  "STG_NS_TRANSACTIONLINE_LATEST"."ITEMTYPE" = 'InvtPart'
         name: STG_NS_SHIPMENT
         noLinkRefs: []
   name: STG_NS_SHIPMENT
