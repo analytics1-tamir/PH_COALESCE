@@ -136,6 +136,25 @@ operation:
               END
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 08966eca-a0a8-457f-905e-f4ea3b2a8717
+          stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QTY_FCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf610128-28f9-406e-8160-642d267bd2ad
+                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+            transform: |-
+              CASE 
+                  WHEN "DISTRIBUTOR_SALES"."UOM" = 'B' THEN "DISTRIBUTOR_SALES"."QTY" * "DIM_ITEM"."BOTTLE_FCE"
+                  WHEN DISTRIBUTOR_SALES."UOM" = 'C' THEN "DISTRIBUTOR_SALES"."QTY" * "DIM_ITEM"."SU_FCE"
+                  ELSE NULL
+              END
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: e61f7888-c60b-4dcc-ac7f-8aeb28b3c277
           stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
         config: {}
