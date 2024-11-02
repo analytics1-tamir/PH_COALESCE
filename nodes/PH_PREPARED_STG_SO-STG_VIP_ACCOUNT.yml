@@ -262,13 +262,31 @@ operation:
         config: {}
         dataType: VARCHAR(256)
         description: ""
-        name: CHAIN_STATUS
+        name: CHAIN_STATUS_ID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: bdf1a9ca-b876-42a1-8f82-c8bceb6ec33c
                 stepCounter: 97d0065f-9368-4a30-a745-01344cacb6ef
             transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e77b2cac-6891-4e70-a03d-367d2fb0c896
+          stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CHAIN_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bdf1a9ca-b876-42a1-8f82-c8bceb6ec33c
+                stepCounter: 97d0065f-9368-4a30-a745-01344cacb6ef
+            transform: |-
+              CASE
+                  WHEN "RETAIL_OUTLET"."CHAIN_STATUS" = 'I' THEN 'Independent'
+                  WHEN "RETAIL_OUTLET"."CHAIN_STATUS" = 'C' THEN 'Chain'
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 31656d69-c96a-4bae-810e-3de385eb8bb9
