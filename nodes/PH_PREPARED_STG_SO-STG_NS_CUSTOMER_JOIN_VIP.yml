@@ -1,6 +1,6 @@
 fileVersion: 1
 id: e75c7206-5e77-4f0c-826c-255065feeeee
-name: STG_NS_CUSTOMER_JOIN
+name: STG_NS_CUSTOMER_JOIN_VIP
 operation:
   config:
     insertStrategy: INSERT
@@ -38,13 +38,13 @@ operation:
         config: {}
         dataType: VARCHAR(2040)
         description: ""
-        name: ID_VIP
+        name: ID_LEGACY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 29a3209f-b5f7-4c50-b4ba-b198f6257a31
                 stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
-            transform: COALESCE("STG_NS_CUSTOMER_RENAME"."ID_VIP", "STG_VIP_DISTRIBUTOR_JOIN"."ID_VIP")
+            transform: COALESCE("STG_NS_CUSTOMER_RENAME"."ID_LEGACY", "STG_VIP_DISTRIBUTOR_JOIN"."ID_VIP")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4e0d8b9e-c833-41b1-8798-cf3f5d05e297
@@ -73,20 +73,6 @@ operation:
               - columnCounter: cf53f56c-517e-4968-9d75-166b299bf931
                 stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
             transform: COALESCE("STG_NS_CUSTOMER_RENAME"."NAME", "STG_VIP_DISTRIBUTOR_JOIN"."NAME")
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: f8f78113-2f2a-4611-80cb-e7926bd523f2
-          stepCounter: e75c7206-5e77-4f0c-826c-255065feeeee
-        config: {}
-        dataType: VARCHAR(256)
-        description: ""
-        name: NAME_ISV
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: d77dcea6-300c-4949-8b7a-2a5afb676c0c
-                stepCounter: b8cb9284-867b-4379-b8a9-6f6f235a8ce1
-            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0f998df9-3d0e-4e87-a8f4-c05134812e29
@@ -155,13 +141,13 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: VIP_STREET
+        name: LEGACY_STREET
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 5b96f716-885f-4d63-9871-aafc7874b91c
                 stepCounter: b8cb9284-867b-4379-b8a9-6f6f235a8ce1
-            transform: ""
+            transform: COALESCE("STG_VIP_DISTRIBUTOR_JOIN"."STREET", "STG_NS_CUSTOMER_RENAME"."SHIPPING_STREET")
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
@@ -170,13 +156,13 @@ operation:
         config: {}
         dataType: VARCHAR(256)
         description: ""
-        name: VIP_CITY
+        name: LEGACY_CITY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: cf3da26c-d28e-4eec-a737-cfef2604e777
                 stepCounter: b8cb9284-867b-4379-b8a9-6f6f235a8ce1
-            transform: ""
+            transform: COALESCE("STG_VIP_DISTRIBUTOR_JOIN"."CITY", "STG_NS_CUSTOMER_RENAME"."SHIPPING_CITY")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 34f021d8-82c4-4bb8-ae5c-5bda8741c946
@@ -184,13 +170,27 @@ operation:
         config: {}
         dataType: VARCHAR(256)
         description: ""
-        name: VIP_STATE
+        name: LEGACY_STATE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 1a6e1706-593a-47fa-a921-f7f3d83ed754
                 stepCounter: b8cb9284-867b-4379-b8a9-6f6f235a8ce1
-            transform: ""
+            transform: COALESCE("STG_VIP_DISTRIBUTOR_JOIN"."STATE", "STG_NS_CUSTOMER_RENAME"."SHIPPING_STATE")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69974a7c-f149-4e30-8399-9327bd9bf15c
+          stepCounter: e75c7206-5e77-4f0c-826c-255065feeeee
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: LEGACY_COUNTRY_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d48ed40-5a88-4e31-8960-4e1afbba4559
+                stepCounter: b8cb9284-867b-4379-b8a9-6f6f235a8ce1
+            transform: COALESCE("STG_VIP_DISTRIBUTOR_JOIN"."COUNTRY_CODE", "STG_NS_CUSTOMER_RENAME"."SHIPPING_COUNTRY")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bcd4474e-ac07-456f-9f8e-e07cebfcac3e
@@ -198,13 +198,13 @@ operation:
         config: {}
         dataType: VARCHAR(256)
         description: ""
-        name: VIP_ZIP
+        name: LEGACY_ZIP
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 062c91ed-280d-43a1-8cd4-0a05a3e15d2b
                 stepCounter: b8cb9284-867b-4379-b8a9-6f6f235a8ce1
-            transform: ""
+            transform: COALESCE("STG_VIP_DISTRIBUTOR_JOIN"."ZIP", "STG_NS_CUSTOMER_RENAME"."SHIPPING_ZIP")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8f757049-ce4a-43fd-a20b-20733f3809b2
@@ -259,6 +259,20 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: c80822c5-6ba8-4e94-99cc-4d1e8c47d25a
+                stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 568cb165-3c3f-4318-bfe0-b39e64e9f8ae
+          stepCounter: e75c7206-5e77-4f0c-826c-255065feeeee
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29b7c037-fa7d-43fb-87ed-5315f7c292ab
                 stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
             transform: ""
       - appliedColumnTests: {}
@@ -329,6 +343,20 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: c4babea6-0904-4b5b-b8ef-d4984bd4d824
+                stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 015ae6e9-3aaf-46d5-b223-54f209d8831f
+          stepCounter: e75c7206-5e77-4f0c-826c-255065feeeee
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3529b653-877b-4b6e-909d-6d1ffb21829b
                 stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
             transform: ""
       - appliedColumnTests: {}
@@ -530,10 +558,10 @@ operation:
           joinCondition: |-
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_CUSTOMER_RENAME') }} "STG_NS_CUSTOMER_RENAME"
             FULL OUTER JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_VIP_DISTRIBUTOR_JOIN') }} "STG_VIP_DISTRIBUTOR_JOIN"
-                ON "STG_NS_CUSTOMER_RENAME"."ID_VIP" = "STG_VIP_DISTRIBUTOR_JOIN"."ID_VIP"
-        name: STG_NS_CUSTOMER_JOIN
+                ON "STG_NS_CUSTOMER_RENAME"."ID_LEGACY" = "STG_VIP_DISTRIBUTOR_JOIN"."ID_VIP"
+        name: STG_NS_CUSTOMER_JOIN_VIP
         noLinkRefs: []
-  name: STG_NS_CUSTOMER_JOIN
+  name: STG_NS_CUSTOMER_JOIN_VIP
   overrideSQL: false
   schema: ""
   sqlType: Stage

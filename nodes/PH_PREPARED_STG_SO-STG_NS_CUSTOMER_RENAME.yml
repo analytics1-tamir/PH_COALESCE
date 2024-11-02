@@ -38,7 +38,7 @@ operation:
         config: {}
         dataType: VARCHAR(2040)
         description: ""
-        name: ID_VIP
+        name: ID_LEGACY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -167,6 +167,18 @@ operation:
             transform: "\"STG_NS_ENTITYADDRESS_BILLING\".\"STATE\""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 29b7c037-fa7d-43fb-87ed-5315f7c292ab
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_BILLING\".\"COUNTRY\""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 0432dfb4-9ff7-4205-bdb8-4c3171dc5ccc
           stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
         config: {}
@@ -227,6 +239,18 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: "\"STG_NS_ENTITYADDRESS_SHIPPING\".\"STATE\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3529b653-877b-4b6e-909d-6d1ffb21829b
+          stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_ENTITYADDRESS_SHIPPING\".\"COUNTRY\""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8a9c3be3-3dba-4933-99bf-824d966b5ea5
