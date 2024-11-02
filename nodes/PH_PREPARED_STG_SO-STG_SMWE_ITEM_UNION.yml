@@ -1227,8 +1227,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
+              - columnCounter: 0716de19-de7f-4212-8445-7d312be9c9e8
+                stepCounter: 7972ed29-9d1b-425a-9211-31fe8e4ea845
             transform: ""
         systemColumnType: None
       - acceptedValues:
