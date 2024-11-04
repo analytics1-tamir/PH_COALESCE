@@ -268,6 +268,26 @@ operation:
               - columnCounter: 7f4ec21f-2015-45e1-9977-2d0e06651b13
                 stepCounter: 866bc2c7-ec54-4048-ace7-cef876e889af
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac072e5e-8873-4a8d-8b80-8fbb5884d2f0
+          stepCounter: 6d2871d9-be5a-47c6-b5d5-3668f25ac077
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: C7_ORDER_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f06ad8c-a785-455e-bd90-a9366a163292
+                stepCounter: 866bc2c7-ec54-4048-ace7-cef876e889af
+            transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: df12bd84-ccf6-4244-b8e2-7a89d49a90bd
