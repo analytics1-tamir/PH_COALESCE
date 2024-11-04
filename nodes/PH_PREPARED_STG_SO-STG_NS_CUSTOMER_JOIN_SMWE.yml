@@ -366,7 +366,7 @@ operation:
           - columnReferences:
               - columnCounter: dcd1e277-2a3f-42e5-8400-bcdd6d29809b
                 stepCounter: e75c7206-5e77-4f0c-826c-255065feeeee
-            transform: ""
+            transform: COALESCE("STG_NS_CUSTOMER_JOIN_VIP"."DIVISION", "STG_SMWE_DISTRIBUTOR"."DISTRIBUTOR_REGION")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 71c5cbcc-e1a4-4a83-b4ee-2b45e2735199

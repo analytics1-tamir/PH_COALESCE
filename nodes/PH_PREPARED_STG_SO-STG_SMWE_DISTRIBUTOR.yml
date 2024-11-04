@@ -691,6 +691,25 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 511dd6b2-61f0-4f1a-aafe-e60ac51fd362
+          stepCounter: e04770da-1471-4a57-9b42-b36518dcf0ba
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DISTRIBUTOR_REGION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c1a4e14f-1016-441d-89e1-fe33dfad2995
+                stepCounter: 8e432b6b-9611-48cf-b3fd-51c4b7538f45
+            transform: |-
+              CASE
+                  WHEN "DIM_DISTRIBUTOR"."CUSTOM_SALES_REGION_CURRENT" IN ('Northwest', 'Southwest') THEN 'West'
+                  WHEN "DIM_DISTRIBUTOR"."CUSTOM_SALES_REGION_CURRENT" IN ('Northeast', 'Southeast') THEN 'East'
+                  ELSE "DIM_DISTRIBUTOR"."CUSTOM_SALES_REGION_FUTURE"
+              END
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: b8952b6f-b34f-453e-bf73-0e220e1fa928
           stepCounter: e04770da-1471-4a57-9b42-b36518dcf0ba
         config: {}
