@@ -73,6 +73,26 @@ operation:
               - columnCounter: 010bbd37-9eb7-44f4-9697-741eaa77bc2d
                 stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7ea753d-1ba2-45dd-aace-6f213c52cc84
+          stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: INVOICE_LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 285e9b2f-1ea6-4b36-af92-f0988819ca3c
+                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+            transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5ade9e73-a705-4cd2-9e9b-511f346aa1c0

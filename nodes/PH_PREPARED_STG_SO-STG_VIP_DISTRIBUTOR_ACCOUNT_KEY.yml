@@ -89,6 +89,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 8174aa48-abac-47be-9d3d-782abf4123fc
+          stepCounter: fb598c6f-c426-430d-b1e3-64bede1a00ce
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INVOICE_LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7ea753d-1ba2-45dd-aace-6f213c52cc84
+                stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 0baa48ae-a578-494c-9a20-451c2d8e1b3f
           stepCounter: fb598c6f-c426-430d-b1e3-64bede1a00ce
         config: {}
