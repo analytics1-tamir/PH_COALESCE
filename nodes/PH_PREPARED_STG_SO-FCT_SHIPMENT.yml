@@ -121,6 +121,7 @@ operation:
         config: {}
         dataType: VARCHAR
         description: ""
+        isBusinessKey: true
         name: ITEM_NUMBER
         nullable: false
         sourceColumnReferences:
