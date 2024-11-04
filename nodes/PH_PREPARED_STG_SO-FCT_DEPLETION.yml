@@ -65,6 +65,7 @@ operation:
         config: {}
         dataType: VARCHAR
         description: ""
+        isBusinessKey: true
         name: SUPPLIER_ITEM_NUMBER
         nullable: true
         sourceColumnReferences:
@@ -107,6 +108,7 @@ operation:
         config: {}
         dataType: DATE
         description: ""
+        isBusinessKey: true
         name: DEPLETION_PERIOD
         nullable: true
         sourceColumnReferences:
