@@ -37,6 +37,22 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 7689d8c3-7fa6-4e6f-b7ff-2fb0de499c19
+          stepCounter: 394cdba8-cf8e-4230-ba38-27f8d7a839b0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_SMWE_ORDER_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+          - columnReferences:
+              - columnCounter: 16cc0017-3ea5-40e7-9aa6-12b7036ccf32
+                stepCounter: 4c7344fa-4b61-4f3b-8428-d683982c999c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: c155f093-384c-4a36-a53e-5a156173c5c0
           stepCounter: 394cdba8-cf8e-4230-ba38-27f8d7a839b0
         config: {}

@@ -29,6 +29,26 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7bd1c2f2-059b-4d6c-a1ce-5040f94ea3f0
+          stepCounter: 61484ebc-511a-4323-9f07-a2e3984ae215
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ID_SMWE_ORDER_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77f2902c-44ca-4a9c-94a6-2772e03e5523
+                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+            transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bb1731f6-0c1e-403f-a758-9852ce0cb41f
