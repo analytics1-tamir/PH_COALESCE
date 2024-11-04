@@ -201,7 +201,11 @@ operation:
           - columnReferences:
               - columnCounter: ae8040a1-5460-4791-be5f-bde6e4294a35
                 stepCounter: 73e43e1d-8c0b-46af-9f50-0f81cf5b4701
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_NS_CUSTOMER_JOIN_SMWE"."LEGACY_COUNTRY_CODE" != 'US' THEN 'International'
+                  ELSE "STG_NS_CUSTOMER_JOIN_SMWE"."LEGACY_STATE"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 974bf9a5-9d32-45be-a7c7-6fcd92e56b2c
@@ -397,7 +401,11 @@ operation:
           - columnReferences:
               - columnCounter: 6be350fa-9b96-46d1-88b3-926a80da2288
                 stepCounter: 73e43e1d-8c0b-46af-9f50-0f81cf5b4701
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_NS_CUSTOMER_JOIN_SMWE"."LEGACY_COUNTRY_CODE" != 'US' THEN 'International'
+                  ELSE "STG_NS_CUSTOMER_JOIN_SMWE"."DIVISION"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b7190e40-24f9-461d-9e1a-ed594010ee73
