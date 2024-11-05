@@ -4,7 +4,7 @@ name: DIM_CUSTOMER
 operation:
   config:
     postSQL: ""
-    preSQL: ""
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_STG_SO', 'DIM_CUSTOMER') }};
     testsEnabled: true
   database: ""
   deployEnabled: true
@@ -27,7 +27,7 @@ operation:
         defaultValue: ""
         description: ""
         isSurrogateKey: true
-        name: DIM_NS_CUSTOMER_JOIN_KEY
+        name: DIM_CUSTOMER_JOIN_KEY
         nullable: true
         sourceColumnReferences:
           - columnReferences: []

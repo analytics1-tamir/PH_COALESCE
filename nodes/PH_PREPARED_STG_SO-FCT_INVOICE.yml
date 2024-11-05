@@ -4,7 +4,7 @@ name: FCT_INVOICE
 operation:
   config:
     postSQL: ""
-    preSQL: ""
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_STG_SO', 'FCT_INVOICE') }};
     testsEnabled: true
   database: ""
   deployEnabled: true
