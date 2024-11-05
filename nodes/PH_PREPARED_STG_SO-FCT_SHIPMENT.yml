@@ -47,6 +47,21 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 7529cd7c-645b-4419-ad71-088a14c35e21
+          stepCounter: 6d2871d9-be5a-47c6-b5d5-3668f25ac077
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: ID_SMWE_LINE_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 89cfbe34-9c7f-4778-901a-7cf0a8200ec5
+                stepCounter: 866bc2c7-ec54-4048-ace7-cef876e889af
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: e5aa7eeb-5251-4ea9-8360-be8b193597a4
           stepCounter: 6d2871d9-be5a-47c6-b5d5-3668f25ac077
         config: {}

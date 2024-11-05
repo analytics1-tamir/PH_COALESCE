@@ -47,6 +47,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 0abcf8f9-f909-4348-8db5-9bbd917eb047
+          stepCounter: 4c7344fa-4b61-4f3b-8428-d683982c999c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_SMWE_LINE_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71b68d8b-41a1-4bd7-a872-014a077787b9
+                stepCounter: 61484ebc-511a-4323-9f07-a2e3984ae215
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: b4d8e293-7e82-4a34-99a4-183b5b0e7fca
           stepCounter: 4c7344fa-4b61-4f3b-8428-d683982c999c
         config: {}
