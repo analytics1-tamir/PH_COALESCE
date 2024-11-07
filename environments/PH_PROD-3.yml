@@ -8,8 +8,8 @@ mappingDefinitions:
     database: PH_PROD_EDW
     schema: STG_SO
   PH_RAW_FILE:
-    database: ""
-    schema: ""
+    database: PH_RAW
+    schema: FILE
   PH_RAW_NS:
     database: PH_RAW
     schema: NS
