@@ -1,0 +1,95 @@
+fileVersion: 1
+id: b1a2fe77-d7d0-4574-aa12-fc834d0194bc
+name: STG_FILE_REGION
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 608509d0-e7f9-4add-bb89-9c44ecb02329
+          stepCounter: b1a2fe77-d7d0-4574-aa12-fc834d0194bc
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 507f99cf-849c-4427-ac76-a55b44e57df0
+                stepCounter: 6e5c9995-69f3-40c4-a1f3-6ed14a9fccd9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40e5f359-b664-48d0-8612-bf2dcd89af7a
+          stepCounter: b1a2fe77-d7d0-4574-aa12-fc834d0194bc
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: afe75738-1e33-4dc9-8d92-123d78aeab2c
+                stepCounter: 6e5c9995-69f3-40c4-a1f3-6ed14a9fccd9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f220dad-233e-4de9-bd61-b7b0704f2137
+          stepCounter: b1a2fe77-d7d0-4574-aa12-fc834d0194bc
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PARENT_REGION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8a2e6ab-044c-44f5-81bd-ae6d4f4fafde
+                stepCounter: 6e5c9995-69f3-40c4-a1f3-6ed14a9fccd9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ddf2f136-ee7e-43a2-952f-9c1b734c76cb
+          stepCounter: b1a2fe77-d7d0-4574-aa12-fc834d0194bc
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: SUB_REGION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d665533-3381-41e8-a535-d2ee6ca6a704
+                stepCounter: 6e5c9995-69f3-40c4-a1f3-6ed14a9fccd9
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_FILE
+            nodeName: REGION
+        join:
+          joinCondition: FROM {{ ref('PH_RAW_FILE', 'REGION') }} "REGION"
+        name: STG_FILE_REGION
+        noLinkRefs: []
+  name: STG_FILE_REGION
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

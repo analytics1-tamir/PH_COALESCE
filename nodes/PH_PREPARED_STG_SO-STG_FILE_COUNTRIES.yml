@@ -1,0 +1,67 @@
+fileVersion: 1
+id: f4d51322-2579-4ba2-bff7-aac5238428f6
+name: STG_FILE_COUNTRIES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f00bf787-8d7d-4e2c-afde-4b426057f359
+          stepCounter: f4d51322-2579-4ba2-bff7-aac5238428f6
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 34163ed9-7577-442a-ba1c-3e5de290795c
+                stepCounter: 3ca321d5-8d80-4030-9223-b53cebfb368b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f342524-2edb-45f6-b30a-9089c08a8104
+          stepCounter: f4d51322-2579-4ba2-bff7-aac5238428f6
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d99d69c-1cb5-4da6-bb2d-75bbbe60218a
+                stepCounter: 3ca321d5-8d80-4030-9223-b53cebfb368b
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_FILE
+            nodeName: COUNTRIES
+        join:
+          joinCondition: FROM {{ ref('PH_RAW_FILE', 'COUNTRIES') }} "COUNTRIES"
+        name: STG_FILE_COUNTRIES
+        noLinkRefs: []
+  name: STG_FILE_COUNTRIES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
