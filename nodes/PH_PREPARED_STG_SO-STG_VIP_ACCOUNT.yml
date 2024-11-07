@@ -234,12 +234,26 @@ operation:
         config: {}
         dataType: VARCHAR(256)
         description: ""
-        name: CLASS_OF_TRADE
+        name: CLASS_OF_TRADE_ID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 9a76f156-82ec-4fad-8643-ca842c6755cc
                 stepCounter: 97d0065f-9368-4a30-a745-01344cacb6ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 218ef5bd-0e8a-46a0-b381-2f3979491ba9
+          stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CLASS_OF_TRADE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d9912ba-9749-493f-97a5-f360fa0f5631
+                stepCounter: a1f7609b-49b9-46d3-9644-d4eb9d40859f
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -284,7 +298,8 @@ operation:
                 stepCounter: 97d0065f-9368-4a30-a745-01344cacb6ef
             transform: |-
               CASE
-                  WHEN "RETAIL_OUTLET"."CHAIN_STATUS" = 'I' THEN 'Independent'
+                  WHEN "RETAIL_OUTLET"."DBA" ILIKE '%costco%' THEN 'Club'
+                  WHEN "RETAIL_OUTLET"."CHAIN_STATUS" = 'I' THEN 'Indy'
                   WHEN "RETAIL_OUTLET"."CHAIN_STATUS" = 'C' THEN 'Chain'
               END
       - appliedColumnTests: {}
@@ -964,13 +979,19 @@ operation:
     sourceMapping:
       - aliases:
           RETAIL_OUTLET: 97d0065f-9368-4a30-a745-01344cacb6ef
+          STG_VIP_CLASS_OF_TRADE_MAPPING: a1f7609b-49b9-46d3-9644-d4eb9d40859f
         customSQL:
           customSQL: ""
         dependencies:
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_VIP_CLASS_OF_TRADE_MAPPING
           - locationName: PH_RAW_VIP
             nodeName: RETAIL_OUTLET
         join:
-          joinCondition: FROM {{ ref('PH_RAW_VIP', 'RETAIL_OUTLET') }} "RETAIL_OUTLET"
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_VIP', 'RETAIL_OUTLET') }} "RETAIL_OUTLET"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_VIP_CLASS_OF_TRADE_MAPPING') }} "STG_VIP_CLASS_OF_TRADE_MAPPING"
+                ON "RETAIL_OUTLET"."CLASS_OF_TRADE" = "STG_VIP_CLASS_OF_TRADE_MAPPING"."VALUE"
         name: STG_VIP_ACCOUNT
         noLinkRefs: []
   name: STG_VIP_ACCOUNT

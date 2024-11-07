@@ -251,11 +251,25 @@ operation:
         config: {}
         dataType: VARCHAR(256)
         description: ""
-        name: CLASS_OF_TRADE
+        name: CLASS_OF_TRADE_ID
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 480a459e-bda9-4b50-9983-0b7de093cd9a
+                stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c2fe4bc-accd-4b70-898c-7aa08b81f974
+          stepCounter: 8ff28fd2-3551-4c4d-83e6-ec800316b252
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: CLASS_OF_TRADE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 218ef5bd-0e8a-46a0-b381-2f3979491ba9
                 stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
             transform: ""
       - appliedColumnTests: {}

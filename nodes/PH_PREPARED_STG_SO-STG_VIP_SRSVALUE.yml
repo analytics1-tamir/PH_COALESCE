@@ -1,0 +1,95 @@
+fileVersion: 1
+id: 2506ff50-ae90-4f2c-a322-f80c1b74bbec
+name: STG_VIP_SRSVALUE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0dda2751-a998-4686-b457-b03659c8d294
+          stepCounter: 2506ff50-ae90-4f2c-a322-f80c1b74bbec
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FIELD_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e993ccd4-5d04-4d57-812d-7c651fbd68da
+                stepCounter: e2af26d5-7bdd-4879-82c3-241ae1daf3cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c84c2b5-3357-45d3-bd64-568120b2bcba
+          stepCounter: 2506ff50-ae90-4f2c-a322-f80c1b74bbec
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FIELD_DESC
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 78672539-04b0-4dfb-8c8c-df86d87702f9
+                stepCounter: e2af26d5-7bdd-4879-82c3-241ae1daf3cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b148e87a-8d7a-4e73-819d-d83a5ad3b316
+          stepCounter: 2506ff50-ae90-4f2c-a322-f80c1b74bbec
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: VALUE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c3e7c35-b917-49ce-b99e-8f6644785c80
+                stepCounter: e2af26d5-7bdd-4879-82c3-241ae1daf3cf
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9310dcd9-ce73-424e-958e-db5ed7f3980a
+          stepCounter: 2506ff50-ae90-4f2c-a322-f80c1b74bbec
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: VALUE_DESC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5582c6d7-2809-4aa4-a6d3-691ada3ce563
+                stepCounter: e2af26d5-7bdd-4879-82c3-241ae1daf3cf
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_VIP
+            nodeName: SRSVALUE
+        join:
+          joinCondition: FROM {{ ref('PH_RAW_VIP', 'SRSVALUE') }} "SRSVALUE"
+        name: STG_VIP_SRSVALUE
+        noLinkRefs: []
+  name: STG_VIP_SRSVALUE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
