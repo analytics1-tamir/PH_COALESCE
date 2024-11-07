@@ -176,7 +176,11 @@ operation:
           - columnReferences:
               - columnCounter: cc998117-5bdc-49f3-b7bd-0cb750708a35
                 stepCounter: d98bb9f1-acbd-4af7-a5e2-54015111f42d
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_VIP_ITEM_RANKED"."VINTAGE" = 0 THEN NULL
+                  WHEN "STG_VIP_ITEM_RANKED"."VINTAGE" = 9999 THEN NULL
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a2169253-89a6-49c2-b27f-50b1ccacbbcb
