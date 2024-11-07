@@ -45,8 +45,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 77f2902c-44ca-4a9c-94a6-2772e03e5523
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: a3409cac-114f-494b-8e71-30bbe04cce88
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
         systemColumnType: None
       - appliedColumnTests: {}
@@ -60,8 +60,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 3240b3e3-9059-4828-a292-ac8510b922a0
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: 98cc6d98-1555-4411-9444-7534d91f4520
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -91,8 +91,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 59c8d290-fa6d-4ad0-bb69-9f375f3b626d
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: 732da82b-c302-4546-be67-85e57dc1af66
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -111,8 +111,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 3be52b90-8b8e-401f-9858-a1530eaa6ff5
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: b59add36-e227-4aab-a2f0-9c17ef0f01d1
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -131,8 +131,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: faf59eea-358c-4f38-a1bd-1ca31cee706f
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: 2397e60c-6722-45bf-aaa5-8866e43b855d
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -191,8 +191,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 58722901-d7e9-40de-ac18-bf1d80330e93
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: d4403189-bba5-4a3b-96d1-30fb0b36958c
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -243,8 +243,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 57d9215e-a10b-4d91-be9a-593cbf393ed6
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: 5b49e139-819b-4f10-9782-3df084b0c5e2
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
         systemColumnType: None
       - appliedColumnTests: {}
@@ -258,14 +258,14 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 57d9215e-a10b-4d91-be9a-593cbf393ed6
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: 5b49e139-819b-4f10-9782-3df084b0c5e2
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: |-
               CASE 
-                  WHEN "FACT_SHIPMENTS"."UNIT_OF_MEASURE" = 'CS' THEN "FACT_SHIPMENTS"."QUANTITY_SHIPPED" * "DIM_ITEM"."SU_TO_9L"
-                  WHEN "FACT_SHIPMENTS"."UNIT_OF_MEASURE" = 'BT' THEN "FACT_SHIPMENTS"."QUANTITY_SHIPPED" * "DIM_ITEM"."ITEM_TO_9L"
-                  WHEN "FACT_SHIPMENTS"."UNIT_OF_MEASURE" = 'KE' THEN "FACT_SHIPMENTS"."QUANTITY_SHIPPED" * "DIM_ITEM"."ITEM_TO_9L"
-                  ELSE "FACT_SHIPMENTS"."QUANTITY_SHIPPED"
+                  WHEN "FACT_SHIPMENTS_NEW"."UNIT_OF_MEASURE" = 'CS' THEN "FACT_SHIPMENTS_NEW"."QUANTITY_SHIPPED" * "DIM_ITEM"."SU_TO_9L"
+                  WHEN "FACT_SHIPMENTS_NEW"."UNIT_OF_MEASURE" = 'BT' THEN "FACT_SHIPMENTS_NEW"."QUANTITY_SHIPPED" * "DIM_ITEM"."ITEM_TO_9L"
+                  WHEN "FACT_SHIPMENTS_NEW"."UNIT_OF_MEASURE" = 'KE' THEN "FACT_SHIPMENTS_NEW"."QUANTITY_SHIPPED" * "DIM_ITEM"."ITEM_TO_9L"
+                  ELSE "FACT_SHIPMENTS_NEW"."QUANTITY_SHIPPED"
               END
       - acceptedValues:
           strictMatch: true
@@ -283,8 +283,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 97949e91-3976-4c7a-81ae-d27a84c80c87
-                stepCounter: 5c1f899e-7471-4932-b0a8-52e86784aa22
+              - columnCounter: 2415b38b-a178-44a3-b7cd-19c8cb40605f
+                stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
         systemColumnType: None
     cteString: ""
@@ -292,19 +292,19 @@ operation:
     sourceMapping:
       - aliases:
           DIM_ITEM: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
-          FACT_SHIPMENTS: 5c1f899e-7471-4932-b0a8-52e86784aa22
+          FACT_SHIPMENTS_NEW: bd0d708e-5d55-4a22-bae1-48c946a5cf44
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: PH_PREPARED_STG_SO
             nodeName: DIM_ITEM
           - locationName: PH_RAW_SMWE
-            nodeName: FACT_SHIPMENTS
+            nodeName: FACT_SHIPMENTS_NEW
         join:
           joinCondition: |-
-            FROM {{ ref('PH_RAW_SMWE', 'FACT_SHIPMENTS') }} "FACT_SHIPMENTS"
+            FROM {{ ref('PH_RAW_SMWE', 'FACT_SHIPMENTS_NEW') }} "FACT_SHIPMENTS_NEW"
             LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_ITEM') }} "DIM_ITEM"
-                ON TO_VARCHAR("FACT_SHIPMENTS"."ITEM_NUMBER") = "DIM_ITEM"."ITEM_NUMBER"
+                ON TO_VARCHAR("FACT_SHIPMENTS_NEW"."ITEM_NUMBER") = "DIM_ITEM"."ITEM_NUMBER"
         name: STG_SMWE_SHIPMENT
         noLinkRefs: []
   name: STG_SMWE_SHIPMENT

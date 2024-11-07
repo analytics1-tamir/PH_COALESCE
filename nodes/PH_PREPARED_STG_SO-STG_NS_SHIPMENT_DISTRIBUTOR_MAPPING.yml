@@ -274,7 +274,7 @@ operation:
           columnCounter: e220f623-55b0-4deb-96dd-38fed2b2f149
           stepCounter: 866bc2c7-ec54-4048-ace7-cef876e889af
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: FLOAT
         description: ""
         name: QUANTITY_BY_FCE
         nullable: true
@@ -288,7 +288,7 @@ operation:
           columnCounter: 7f4ec21f-2015-45e1-9977-2d0e06651b13
           stepCounter: 866bc2c7-ec54-4048-ace7-cef876e889af
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: FLOAT
         description: ""
         name: QUANTITY_BY_CASE
         nullable: true

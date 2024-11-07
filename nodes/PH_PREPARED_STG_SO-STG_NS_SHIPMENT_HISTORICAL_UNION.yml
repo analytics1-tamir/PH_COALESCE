@@ -322,7 +322,7 @@ operation:
           columnCounter: e181b283-03e2-4d23-8f13-defcf6e6e614
           stepCounter: 394cdba8-cf8e-4230-ba38-27f8d7a839b0
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: FLOAT
         description: ""
         name: QUANTITY_BY_FCE
         nullable: true
@@ -340,7 +340,7 @@ operation:
           columnCounter: a1a48ef8-3078-4bef-ad7d-f5c600e148f7
           stepCounter: 394cdba8-cf8e-4230-ba38-27f8d7a839b0
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: FLOAT
         description: ""
         name: QUANTITY_BY_CASE
         nullable: true
