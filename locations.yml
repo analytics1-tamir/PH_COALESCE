@@ -3,6 +3,7 @@ fileVersion: 1
 locations:
   - PH_PREPARED_SO
   - PH_PREPARED_STG_SO
+  - PH_RAW_FILE
   - PH_RAW_NS
   - PH_RAW_NS_NETSUITE
   - PH_RAW_NS_NETSUITE_SOURCE

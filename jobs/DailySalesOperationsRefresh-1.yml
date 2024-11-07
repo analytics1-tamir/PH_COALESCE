@@ -5,4 +5,3 @@ includeSelector: |
   {*}
 name: Daily Sales Operations Refresh
 type: Job
-version: 2
