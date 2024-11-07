@@ -7,6 +7,9 @@ mappingDefinitions:
   PH_PREPARED_STG_SO:
     database: PH_PROD_EDW
     schema: STG_SO
+  PH_RAW_FILE:
+    database: ""
+    schema: ""
   PH_RAW_NS:
     database: PH_RAW
     schema: NS

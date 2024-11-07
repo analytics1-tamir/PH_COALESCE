@@ -1,0 +1,58 @@
+fileVersion: 1
+id: 3ca321d5-8d80-4030-9223-b53cebfb368b
+name: COUNTRIES
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: PH_RAW_FILE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34163ed9-7577-442a-ba1c-3e5de290795c
+          stepCounter: 3ca321d5-8d80-4030-9223-b53cebfb368b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d99d69c-1cb5-4da6-bb2d-75bbbe60218a
+          stepCounter: 3ca321d5-8d80-4030-9223-b53cebfb368b
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('PH_RAW_FILE', 'COUNTRIES') }}
+  name: COUNTRIES
+  schema: ""
+  sqlType: Source
+  table: COUNTRIES
+  type: sourceInput
+  version: 1
+type: Node
