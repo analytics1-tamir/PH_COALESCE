@@ -970,7 +970,12 @@ operation:
           - columnReferences:
               - columnCounter: f2711fc2-54e8-41a7-b42c-cd5c2dc602c3
                 stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
-            transform: ""
+            transform: |-
+              CASE 
+                  WHEN "STG_HISTORICAL_ITEM_JOIN"."PRODUCT_GROUP_DESCRIPTION" LIKE 'Chardonnay%' THEN REPLACE("STG_HISTORICAL_ITEM_JOIN"."PRODUCT_GROUP_DESCRIPTION", 'Chardonnay', 'CHD')
+                  WHEN "STG_HISTORICAL_ITEM_JOIN"."PRODUCT_GROUP_DESCRIPTION" LIKE 'Pinot Noir%' THEN REPLACE("STG_HISTORICAL_ITEM_JOIN"."PRODUCT_GROUP_DESCRIPTION", 'Pinot Noir', 'PN')
+                  ELSE "STG_HISTORICAL_ITEM_JOIN"."PRODUCT_GROUP_DESCRIPTION"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 554f09c3-3a63-4cea-870f-ab5fdc38eb99
