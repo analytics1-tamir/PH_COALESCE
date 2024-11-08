@@ -114,7 +114,11 @@ operation:
           - columnReferences:
               - columnCounter: fab09714-ef5d-46a1-8c94-faa2dc1053b4
                 stepCounter: 8e432b6b-9611-48cf-b3fd-51c4b7538f45
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "DIM_DISTRIBUTOR"."ADDRESS_COUNTRY_CODE" = 'US' AND "DIM_DISTRIBUTOR"."CUSTOMER_TYPE_DESCRIPTION" = 'International' THEN 'Cruise/Other'
+                  ELSE "DIM_DISTRIBUTOR"."ADDRESS_COUNTRY_CODE"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e744417b-d17c-4c41-a557-37ee93c2285c

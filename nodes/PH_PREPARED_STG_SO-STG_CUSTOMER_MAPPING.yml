@@ -341,7 +341,7 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 84be3719-0e4b-4346-b2bf-5c51ba41d02e
+          columnCounter: 4b2e8df7-5dce-427b-9fdd-44552539c565
           stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
         config: {}
         dataType: VARCHAR(256)
@@ -352,7 +352,31 @@ operation:
           - columnReferences:
               - columnCounter: 65556f26-8150-4a74-9d5d-e4e631700447
                 stepCounter: 73e43e1d-8c0b-46af-9f50-0f81cf5b4701
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_NS_CUSTOMER_JOIN_SMWE"."AREA" != 'SGWS' THEN 'Independent'
+                  WHEN "STG_NS_CUSTOMER_JOIN_SMWE"."AREA" IS NULL THEN 'Independent'
+                  ELSE "STG_NS_CUSTOMER_JOIN_SMWE"."AREA"
+              END
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84be3719-0e4b-4346-b2bf-5c51ba41d02e
+          stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: AREA_CHILD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65556f26-8150-4a74-9d5d-e4e631700447
+                stepCounter: 73e43e1d-8c0b-46af-9f50-0f81cf5b4701
+            transform: |-
+              CASE
+                  WHEN "STG_NS_CUSTOMER_JOIN_SMWE"."AREA" = 'SGWS' THEN "STG_FILE_REGION"."SUB_REGION"
+                  WHEN "STG_NS_CUSTOMER_JOIN_SMWE"."AREA" IS NULL THEN 'Independent'
+                  ELSE "STG_NS_CUSTOMER_JOIN_SMWE"."AREA"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c04cd677-bb74-48ac-8e14-8877843f14bf
