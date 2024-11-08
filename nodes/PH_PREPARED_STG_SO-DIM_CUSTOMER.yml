@@ -89,7 +89,7 @@ operation:
           - columnReferences:
               - columnCounter: dae12b5d-e246-421c-825d-55c2f26c3ac4
                 stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
-            transform: CONCAT(COALESCE(TO_VARCHAR("STG_CUSTOMER_MAPPING"."ID_NS"), TO_VARCHAR("STG_CUSTOMER_MAPPING"."ID_LEGACY")), ' - ', "STG_CUSTOMER_MAPPING"."NAME")
+            transform: CONCAT("STG_CUSTOMER_MAPPING"."ID_LEGACY", ' - ', "STG_CUSTOMER_MAPPING"."NAME")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 15bd92a9-71ab-47fc-894a-a166bcf9f374
