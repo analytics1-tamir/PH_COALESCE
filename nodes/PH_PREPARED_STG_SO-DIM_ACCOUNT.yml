@@ -204,6 +204,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 841a49e4-eb7a-42a4-a5b3-18764e171581
+          stepCounter: 8ff28fd2-3551-4c4d-83e6-ec800316b252
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: FULL_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 411afa8d-96cc-464b-a0ee-6a0ba2d84657
+                stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 85f2a543-7c37-4bb6-b1df-b63f81361cda
           stepCounter: 8ff28fd2-3551-4c4d-83e6-ec800316b252
         config: {}

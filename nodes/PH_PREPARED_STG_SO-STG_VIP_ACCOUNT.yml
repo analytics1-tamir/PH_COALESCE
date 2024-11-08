@@ -185,6 +185,31 @@ operation:
               - columnCounter: 278b6f9a-0d32-4811-ba28-be81c416b89b
                 stepCounter: 97d0065f-9368-4a30-a745-01344cacb6ef
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 411afa8d-96cc-464b-a0ee-6a0ba2d84657
+          stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: FULL_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CONCAT(COALESCE("RETAIL_OUTLET"."ADDR_1", ''), 
+                     CASE WHEN "RETAIL_OUTLET"."CITY" IS NOT NULL THEN CONCAT(', ', "RETAIL_OUTLET"."CITY") ELSE '' END,
+                     CASE WHEN "RETAIL_OUTLET"."STATE" IS NOT NULL THEN CONCAT(', ', "RETAIL_OUTLET"."STATE") ELSE '' END,
+                     CASE WHEN "RETAIL_OUTLET"."COUNTRY" IS NOT NULL THEN CONCAT(', ', "RETAIL_OUTLET"."COUNTRY") ELSE '' END
+                  )
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0d04f833-705f-4db7-b3db-2b6c4de3cfe5
