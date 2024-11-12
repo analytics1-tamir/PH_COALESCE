@@ -1,0 +1,234 @@
+fileVersion: 1
+id: 5fdacb12-db08-4969-b089-9f5e18feda3c
+name: FCT_STATJOURNAL
+operation:
+  config:
+    postSQL: ""
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_STG_SO', 'FCT_STATJOURNAL') }};
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1db89cca-d076-464b-8b7f-bb8a4a1f7dc1
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: VARCHAR(360)
+        description: ""
+        name: ID_TRANSACTION
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb5b83bc-6538-43c6-9402-026c12025518
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a623693-2286-4f52-8ebe-177c4952044c
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: ID_JOURNAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0f8690e-c0d9-4083-838c-e9e6bea74d20
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0228a63-938e-4329-80f3-da8d417dd1d4
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_JOURNAL_ACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 088a3c09-f62b-4c3b-a8dd-dec0eac8ec76
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 826370b0-edc2-4ee8-9699-662876a2fc67
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: ID_CUSTOMER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 706a2a50-c849-404f-83fa-1040e281b915
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfaaa93d-912d-4748-a73b-5a9962f893d1
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_DEPARTMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 710a8fbc-0a3c-49d7-92e8-86fa55d1b594
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39475581-3b41-41ab-a2d6-935a10abefa5
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: badd53ba-c566-48b1-a41f-f5a0c36f8ac8
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96013400-47ad-4db8-926b-60b43a7e44e9
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        isBusinessKey: true
+        keyColumnType: None
+        name: LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 172a7d71-aba1-4e41-a661-09ab76db7aff
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8f1c37b-9e37-435c-921d-86eb0d509f08
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c67cb608-8085-4c10-9bea-7792978cfff9
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 047fc349-c81a-4138-8cde-e936e535d29d
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a01ca6c3-8349-4036-af08-d8d5207484ca
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e796bba9-ea01-4541-8516-8b6e2eca6bb4
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: VARCHAR(7992)
+        description: ""
+        name: MEMO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f251525-c1c3-49c3-9200-527ca97bf9cd
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bee318a4-74cd-4e37-a34e-e5b6468c503f
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE_TRANSACTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3fe4c20-d543-415b-850c-ff34b8d19c17
+                stepCounter: 64414a36-e943-4faf-9645-682502236ce6
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89ccb07d-3469-4991-8a53-968a58bda52e
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ddfed8c0-391d-4391-8e75-9418a55dd942
+          stepCounter: 5fdacb12-db08-4969-b089-9f5e18feda3c
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_STATJOURNAL_JOIN
+        join:
+          joinCondition: FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_STATJOURNAL_JOIN') }} "STG_NS_STATJOURNAL_JOIN"
+        name: FCT_STATJOURNAL
+        noLinkRefs: []
+  name: FCT_STATJOURNAL
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,174 @@
+fileVersion: 1
+id: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+name: STG_NS_STATJOURNAL_LINE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69c3e310-8e16-4a61-9872-50b3e818c024
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_JOURNAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33642994-1e4f-4158-933b-3eab755118f1
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ae5d630-246a-491a-9265-de65072bc428
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_JOURNAL_ACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa050ecb-4de6-451c-8447-21eb19549e38
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5b04236-643c-45dc-9eae-d85f320ab845
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_CUSTOMER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a37e13d3-46dc-4081-9287-37e07ebc3f41
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58778984-120d-4d15-b43b-467a737d2b94
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_DEPARTMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c531daf-4251-4ed9-872e-749b521283ea
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6456d4b-37e3-4a38-8fbe-908a55d49607
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e57edf9e-add4-4e8b-9a02-be86473e2068
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3cb15d22-d6b7-4b3f-b5b3-d81aa9a1558e
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2f68fd36-f700-4edb-8dad-1ae0dc0404f0
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ede3102-b0a9-435f-a628-44bbdbb7f1df
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40d8af6e-3b72-48ec-8e3b-216950a7c53c
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 383014c7-1b7f-42e3-975a-294b27c77faf
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2277ea31-bf6f-458c-a297-a2a3a314936c
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: efa7fd73-c6f5-45c0-83a3-0aa6d67e2e86
+          stepCounter: f46cb0a6-532f-4920-8803-c7797f3dc3e7
+        config: {}
+        dataType: VARCHAR(7992)
+        description: ""
+        name: MEMO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 87098a00-3a08-42a5-a6d1-1abc8d4cde15
+                stepCounter: f8a310a0-624e-48fa-b344-d572e300ea27
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STATISTICALJOURNALENTRYLINE: f8a310a0-624e-48fa-b344-d572e300ea27
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_NS
+            nodeName: STATISTICALJOURNALENTRYLINE
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_NS', 'STATISTICALJOURNALENTRYLINE') }} "STATISTICALJOURNALENTRYLINE"
+            WHERE "STATISTICALJOURNALENTRYLINE"."_FIVETRAN_DELETED" = FALSE
+        name: STG_NS_STATJOURNAL_LINE
+        noLinkRefs: []
+  name: STG_NS_STATJOURNAL_LINE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

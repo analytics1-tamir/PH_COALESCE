@@ -1,0 +1,196 @@
+fileVersion: 1
+id: 70e34fd3-7718-4129-a383-274354ddaaae
+name: STG_NS_STATJOURNAL
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c789e3a2-a1c0-4538-a737-8e2a34e95dcf
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_JOURNAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c5df69d-7433-484e-98e9-69197b67d5be
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14178dbf-b0b8-499b-8b24-7003d86921a6
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: VARCHAR(2040)
+        description: ""
+        name: ID_EXTERNAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42184093-4940-441b-b227-a99ff6fc2c25
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b414b330-357b-4383-b43d-d5e3b7267caa
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: VARCHAR(360)
+        description: ""
+        name: ID_TRANSACTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: be8b88d3-7f03-4066-99ef-052357e768a5
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d841823c-9baf-4508-b635-ed7048079d4c
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: TOTAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90aa5a9d-cb39-470e-b922-f43f4360005d
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5856a931-97db-43f5-8e92-7deecf009d2a
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c85e269-c0c8-4b34-8975-127d8921bd4c
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 81d7e1e7-57e3-4ce7-97e0-1dc578453941
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIT_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 281350a9-465a-48b7-a078-cae2739e4a03
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 113446ad-ed54-4452-aac7-33180458702c
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e7ebee3-06e0-4a41-9bf5-c291ee45ae93
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c96df2b5-7d1d-4b34-83f0-e2472a538b74
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: APPROVED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2c3d218-7de4-4ff1-aa50-0c86d35c7fa5
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eeb4c18b-4165-4802-8878-1e44dca0ba62
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c4a5c2a0-75fc-4787-8029-7c53b89924b9
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb02691f-f32c-401f-b693-ea1be69b6e06
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: VOIDED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8059b3f-82a3-469b-b2f1-993980aa8efc
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2925667-de7e-4b5f-a133-ad70a0e059ca
+          stepCounter: 70e34fd3-7718-4129-a383-274354ddaaae
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE_TRANSACTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7d981b7-085c-494a-8d88-f0e60de9100b
+                stepCounter: b2045887-622b-4ec9-9333-2647aea0ae2f
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STATISTICALJOURNALENTRY: b2045887-622b-4ec9-9333-2647aea0ae2f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_NS
+            nodeName: STATISTICALJOURNALENTRY
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_NS', 'STATISTICALJOURNALENTRY') }} "STATISTICALJOURNALENTRY"
+            WHERE "STATISTICALJOURNALENTRY"."_FIVETRAN_DELETED" = FALSE
+        name: STG_NS_STATJOURNAL
+        noLinkRefs: []
+  name: STG_NS_STATJOURNAL
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
