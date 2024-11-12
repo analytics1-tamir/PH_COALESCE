@@ -80,11 +80,21 @@ operation:
           - columnReferences:
               - columnCounter: bc14b117-2d2a-4afa-b0c5-ca346847af46
                 stepCounter: 1bdea735-189c-4ad0-a425-9a29bca63e1b
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_NS_SHIPMENT_PARENT_MAPPING"."ID_DISTRIBUTOR_NS" IN ('5453', '5455', '5452', '5454') THEN '5345' -- Map Hawaii
+                  WHEN "STG_NS_SHIPMENT_PARENT_MAPPING"."ID_DISTRIBUTOR_NS" IN ('5470', '5469') THEN '5354' -- Map Kansas
+                  ELSE "STG_NS_SHIPMENT_PARENT_MAPPING"."ID_DISTRIBUTOR_NS"
+              END
           - columnReferences:
               - columnCounter: b4d8e293-7e82-4a34-99a4-183b5b0e7fca
                 stepCounter: 4c7344fa-4b61-4f3b-8428-d683982c999c
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_SMWE_SHIPMENT_CASE"."ID_DISTRIBUTOR_LEGACY" IN ('14191', '30254', '30255', '30256') THEN '5345' -- Map Hawaii
+                  WHEN "STG_SMWE_SHIPMENT_CASE"."ID_DISTRIBUTOR_LEGACY" IN ('37291', '14300') THEN '5354' -- Map Kansas
+                  ELSE "STG_SMWE_SHIPMENT_CASE"."ID_DISTRIBUTOR_NS"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5667eacf-d095-4b91-9064-e249af55963a
@@ -100,7 +110,12 @@ operation:
           - columnReferences:
               - columnCounter: a7883416-6585-450d-a6a1-2db9bae7a3ab
                 stepCounter: 4c7344fa-4b61-4f3b-8428-d683982c999c
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_SMWE_SHIPMENT_CASE"."ID_DISTRIBUTOR_LEGACY" IN ('14191', '30254', '30255', '30256') THEN NULL -- Map Hawaii
+                  WHEN "STG_SMWE_SHIPMENT_CASE"."ID_DISTRIBUTOR_LEGACY" IN ('37291', '14300') THEN NULL -- Map Kansas
+                  ELSE "STG_SMWE_SHIPMENT_CASE"."ID_DISTRIBUTOR_LEGACY"
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d0018e95-0b82-4226-95ff-e31e84fd8c9c
