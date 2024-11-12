@@ -278,14 +278,14 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: PH_PREPARED_STG_SO
+          - locationName: PH_PREPARED_SO
             nodeName: DIM_ACCOUNT
           - locationName: PH_PREPARED_STG_SO
             nodeName: STG_VIP_DISTRIBUTOR_SALES
         join:
           joinCondition: |-
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_VIP_DISTRIBUTOR_SALES') }} "STG_VIP_DISTRIBUTOR_SALES"
-            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_ACCOUNT') }} "DIM_ACCOUNT"
+            LEFT JOIN {{ ref('PH_PREPARED_SO', 'DIM_ACCOUNT') }} "DIM_ACCOUNT"
                 ON "STG_VIP_DISTRIBUTOR_SALES"."ID_DISTRIBUTOR" = "DIM_ACCOUNT"."ID_DISTRIBUTOR" AND
                    "STG_VIP_DISTRIBUTOR_SALES"."ID_ACCOUNT" = "DIM_ACCOUNT"."ID_ACCOUNT"
         name: STG_VIP_DISTRIBUTOR_ACCOUNT_KEY

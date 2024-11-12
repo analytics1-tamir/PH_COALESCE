@@ -320,7 +320,7 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: PH_PREPARED_STG_SO
+          - locationName: PH_PREPARED_SO
             nodeName: DIM_ITEM
           - locationName: PH_PREPARED_STG_SO
             nodeName: STG_NS_TRANSACTION
@@ -333,7 +333,7 @@ operation:
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_TRANSACTION') }} "STG_NS_TRANSACTION"
             INNER JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_TRANSACTIONLINE_LATEST') }} "STG_NS_TRANSACTIONLINE_LATEST"
                 ON "STG_NS_TRANSACTION"."ID" = "STG_NS_TRANSACTIONLINE_LATEST"."ID_TRANSACTION"
-            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_ITEM') }} "DIM_ITEM"
+            LEFT JOIN {{ ref('PH_PREPARED_SO', 'DIM_ITEM') }} "DIM_ITEM"
                 ON "STG_NS_TRANSACTIONLINE_LATEST"."ITEM_ID_NS" = "DIM_ITEM"."ID_NS"
             LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_TRANSACTIONSTATUS') }} "STG_NS_TRANSACTIONSTATUS"
                 ON "STG_NS_TRANSACTION"."STATUS" = "STG_NS_TRANSACTIONSTATUS"."ID" AND

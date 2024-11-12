@@ -340,14 +340,14 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: PH_PREPARED_STG_SO
+          - locationName: PH_PREPARED_SO
             nodeName: DIM_CUSTOMER
           - locationName: PH_PREPARED_STG_SO
             nodeName: STG_NS_SHIPMENT_HISTORICAL_UNION
         join:
           joinCondition: |-
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_SHIPMENT_HISTORICAL_UNION') }} "STG_NS_SHIPMENT_HISTORICAL_UNION"
-            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_CUSTOMER') }} "DIM_CUSTOMER"
+            LEFT JOIN {{ ref('PH_PREPARED_SO', 'DIM_CUSTOMER') }} "DIM_CUSTOMER"
                 ON "STG_NS_SHIPMENT_HISTORICAL_UNION"."ID_DISTRIBUTOR_NS" = "DIM_CUSTOMER"."ID_NS" OR
                    "STG_NS_SHIPMENT_HISTORICAL_UNION"."ID_DISTRIBUTOR_LEGACY" = "DIM_CUSTOMER"."ID_LEGACY"
         name: STG_NS_SHIPMENT_DISTRIBUTOR_MAPPING

@@ -298,14 +298,14 @@ operation:
         customSQL:
           customSQL: ""
         dependencies:
-          - locationName: PH_PREPARED_STG_SO
+          - locationName: PH_PREPARED_SO
             nodeName: DIM_ITEM
           - locationName: PH_PREPARED_STG_SO
             nodeName: STG_SMWE_SHIPMENT
         join:
           joinCondition: |-
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_SMWE_SHIPMENT') }} "STG_SMWE_SHIPMENT"
-            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'DIM_ITEM') }} "DIM_ITEM"
+            LEFT JOIN {{ ref('PH_PREPARED_SO', 'DIM_ITEM') }} "DIM_ITEM"
                 ON "STG_SMWE_SHIPMENT"."ITEM_NUMBER" = "DIM_ITEM"."ITEM_NUMBER"
         name: STG_SMWE_SHIPMENT_CASE
         noLinkRefs: []
