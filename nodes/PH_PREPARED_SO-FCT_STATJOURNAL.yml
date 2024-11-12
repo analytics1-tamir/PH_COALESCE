@@ -4,7 +4,7 @@ name: FCT_STATJOURNAL
 operation:
   config:
     postSQL: ""
-    preSQL: TRUNCATE {{ ref('PH_PREPARED_STG_SO', 'FCT_STATJOURNAL') }};
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_SO', 'FCT_STATJOURNAL') }};
     testsEnabled: true
   database: ""
   deployEnabled: true

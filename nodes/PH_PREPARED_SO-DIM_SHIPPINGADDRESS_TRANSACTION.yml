@@ -4,7 +4,7 @@ name: DIM_SHIPPINGADDRESS_TRANSACTION
 operation:
   config:
     postSQL: ""
-    preSQL: TRUNCATE {{ ref('PH_PREPARED_STG_SO', 'DIM_SHIPPINGADDRESS_TRANSACTION') }};
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_SO', 'DIM_SHIPPINGADDRESS_TRANSACTION') }};
     testsEnabled: true
   database: ""
   deployEnabled: true

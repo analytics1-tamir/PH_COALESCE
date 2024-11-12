@@ -4,7 +4,7 @@ name: DIM_ACCOUNT
 operation:
   config:
     postSQL: ""
-    preSQL: ""
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_SO', 'DIM_ACCOUNT') }};
     testsEnabled: true
   database: ""
   deployEnabled: true

@@ -4,7 +4,7 @@ name: FCT_DISTRIBUTOR_SALES
 operation:
   config:
     postSQL: ""
-    preSQL: TRUNCATE {{ ref('PH_PREPARED_STG_SO', 'FCT_DISTRIBUTOR_SALES') }};
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_SO', 'FCT_DISTRIBUTOR_SALES') }};
     testsEnabled: true
   database: ""
   deployEnabled: true
