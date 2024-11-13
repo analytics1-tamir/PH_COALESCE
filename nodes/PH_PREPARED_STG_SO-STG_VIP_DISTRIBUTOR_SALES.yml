@@ -28,8 +28,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 9afb72ad-89b0-4024-8124-eb648ac9d819
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 399f3a91-8624-4f61-b38c-de2b5a2c9521
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -42,8 +42,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 85363312-331c-4ade-ab46-be6dcd2e71af
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: b187ee50-539b-418f-b31d-fca23b83b05a
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -56,8 +56,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 12f8c1d4-22f9-4480-944c-18fd00ac6c39
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 5f6b0669-047b-4815-bc70-855f8e01c0d9
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -70,8 +70,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 010bbd37-9eb7-44f4-9697-741eaa77bc2d
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 3aec0e20-2584-4fa7-8064-589f2e22faee
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - acceptedValues:
           strictMatch: true
@@ -89,8 +89,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 285e9b2f-1ea6-4b36-af92-f0988819ca3c
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 1487e1a9-51f4-47e6-b064-8bcc069b06ef
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
         systemColumnType: None
       - appliedColumnTests: {}
@@ -104,8 +104,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: a1b95615-2e7d-4500-b2e4-017947241186
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: b5210956-acd8-45a2-8c57-80502a11cdf0
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -118,8 +118,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: c6712736-bedc-4997-bfb8-4a086583ecd4
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 72426836-f393-4b20-a823-c36e3c4df73c
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -132,8 +132,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 7f2ebf58-3cf9-4994-8f7a-bd0c880e3805
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 8cbf9fda-7229-4711-9b39-8e2d93783db9
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -146,12 +146,12 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: cf610128-28f9-406e-8160-642d267bd2ad
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 63293fdf-3858-4d85-b803-e80e9cb27046
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: |-
               CASE 
-                  WHEN "DISTRIBUTOR_SALES"."UOM" = 'B' THEN "DISTRIBUTOR_SALES"."QTY"
-                  WHEN DISTRIBUTOR_SALES."UOM" = 'C' THEN "DISTRIBUTOR_SALES"."QTY" * "DIM_ITEM"."ITEMS_PER_CASE"
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."UOM" = 'B' THEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."QTY"
+                  WHEN STG_VIP_DISTRIBUTOR_SALES_RANKED."UOM" = 'C' THEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."QTY" * "DIM_ITEM"."ITEMS_PER_CASE"
                   ELSE NULL
               END
       - appliedColumnTests: {}
@@ -165,12 +165,12 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: cf610128-28f9-406e-8160-642d267bd2ad
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 63293fdf-3858-4d85-b803-e80e9cb27046
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: |-
               CASE 
-                  WHEN "DISTRIBUTOR_SALES"."UOM" = 'B' THEN "DISTRIBUTOR_SALES"."QTY" * "DIM_ITEM"."BOTTLE_FCE"
-                  WHEN DISTRIBUTOR_SALES."UOM" = 'C' THEN "DISTRIBUTOR_SALES"."QTY" * "DIM_ITEM"."SU_FCE"
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."UOM" = 'B' THEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."QTY" * "DIM_ITEM"."BOTTLE_FCE"
+                  WHEN STG_VIP_DISTRIBUTOR_SALES_RANKED."UOM" = 'C' THEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."QTY" * "DIM_ITEM"."SU_FCE"
                   ELSE NULL
               END
       - appliedColumnTests: {}
@@ -184,12 +184,12 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: cf610128-28f9-406e-8160-642d267bd2ad
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: 63293fdf-3858-4d85-b803-e80e9cb27046
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: |-
               CASE 
-                  WHEN "DISTRIBUTOR_SALES"."UOM" = 'B' THEN "DISTRIBUTOR_SALES"."QTY" * "DIM_ITEM"."BOTTLE_TO_CASE"
-                  WHEN DISTRIBUTOR_SALES."UOM" = 'C' THEN "DISTRIBUTOR_SALES"."QTY"
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."UOM" = 'B' THEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."QTY" * "DIM_ITEM"."BOTTLE_TO_CASE"
+                  WHEN STG_VIP_DISTRIBUTOR_SALES_RANKED."UOM" = 'C' THEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."QTY"
                   ELSE NULL
               END
       - appliedColumnTests: {}
@@ -203,8 +203,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: bedf82c9-05ea-461f-a5f3-d073bfb5b3cf
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: ffeb6c19-6307-4797-8ada-5f6595a97287
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -217,18 +217,18 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: bedf82c9-05ea-461f-a5f3-d073bfb5b3cf
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+              - columnCounter: ffeb6c19-6307-4797-8ada-5f6595a97287
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
             transform: |-
               CASE
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'R' THEN 'retail sales'
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'B' THEN 'warehouse breakage'
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'T' THEN 'warehouse transfer'
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'E' THEN 'revenue adjustment (current month)'
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'V' THEN 'revenue adjustment (prior month)'
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'S' THEN 'supplier samples'
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'C' THEN 'credit memo'
-                  WHEN "DISTRIBUTOR_SALES"."TRANS_TYPE" = 'D' THEN 'debit memo'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'R' THEN 'retail sales'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'B' THEN 'warehouse breakage'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'T' THEN 'warehouse transfer'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'E' THEN 'revenue adjustment (current month)'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'V' THEN 'revenue adjustment (prior month)'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'S' THEN 'supplier samples'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'C' THEN 'credit memo'
+                  WHEN "STG_VIP_DISTRIBUTOR_SALES_RANKED"."TRANS_TYPE" = 'D' THEN 'debit memo'
               END
       - appliedColumnTests: {}
         columnReference:
@@ -241,9 +241,9 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: b2fd8cc2-f1a0-4158-bea0-acd11d052f19
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
-            transform: TO_DATE(TO_CHAR("DISTRIBUTOR_SALES"."INVOICE_DATE"), 'YYYYMMDD')
+              - columnCounter: 8e59b7f5-aa81-4721-bbab-077d18bdbae6
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
+            transform: TO_DATE(TO_CHAR("STG_VIP_DISTRIBUTOR_SALES_RANKED"."INVOICE_DATE"), 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 57ed0ea6-76d6-4ac2-b6d0-ac5d7e862430
@@ -255,9 +255,9 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 571ae17d-84bd-46fd-800a-936afa4240b3
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
-            transform: TO_DATE(TO_CHAR("DISTRIBUTOR_SALES"."FROM_DATE"), 'YYYYMMDD')
+              - columnCounter: f0671fc6-114e-429b-ad45-f89153b0cd1a
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
+            transform: TO_DATE(TO_CHAR("STG_VIP_DISTRIBUTOR_SALES_RANKED"."FROM_DATE"), 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f73452f3-2479-414b-b152-009073b40e19
@@ -269,9 +269,9 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 9bf2ba91-7e01-4e14-bd83-648cd5e5cd70
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
-            transform: TO_DATE(TO_CHAR("DISTRIBUTOR_SALES"."TO_DATE"), 'YYYYMMDD')
+              - columnCounter: 2948d202-bb06-4c80-9c8a-ce49ff8d1bad
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
+            transform: TO_DATE(TO_CHAR("STG_VIP_DISTRIBUTOR_SALES_RANKED"."TO_DATE"), 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 757bb0c4-68b8-483e-a197-5ac7c8ddf7aa
@@ -283,28 +283,29 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 66568372-5aaa-44f8-96ed-8d59c256a726
-                stepCounter: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
-            transform: TO_DATE(TO_CHAR("DISTRIBUTOR_SALES"."DEPLETION_PERIOD"), 'YYYYMM')
+              - columnCounter: 6b6bc0f3-3ff1-43be-9968-8eaf6aaeb189
+                stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
+            transform: TO_DATE(TO_CHAR("STG_VIP_DISTRIBUTOR_SALES_RANKED"."DEPLETION_PERIOD"), 'YYYYMM')
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
           DIM_ITEM: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
-          DISTRIBUTOR_SALES: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
+          STG_VIP_DISTRIBUTOR_SALES_RANKED: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: PH_PREPARED_SO
             nodeName: DIM_ITEM
-          - locationName: PH_RAW_VIP
-            nodeName: DISTRIBUTOR_SALES
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_VIP_DISTRIBUTOR_SALES_RANKED
         join:
           joinCondition: |-
-            FROM {{ ref('PH_RAW_VIP', 'DISTRIBUTOR_SALES') }} "DISTRIBUTOR_SALES"
+            FROM {{ ref('PH_PREPARED_STG_SO', 'STG_VIP_DISTRIBUTOR_SALES_RANKED') }} "STG_VIP_DISTRIBUTOR_SALES_RANKED"
             LEFT JOIN {{ ref('PH_PREPARED_SO', 'DIM_ITEM') }} "DIM_ITEM"
-                ON "DISTRIBUTOR_SALES"."SUPP_ITEM" = "DIM_ITEM"."ITEM_NUMBER"
-            WHERE "DISTRIBUTOR_SALES"."ACCT_NBR" != 'SRS99'
+                ON "STG_VIP_DISTRIBUTOR_SALES_RANKED"."SUPP_ITEM" = "DIM_ITEM"."ITEM_NUMBER"
+            WHERE "STG_VIP_DISTRIBUTOR_SALES_RANKED"."ACCT_NBR" != 'SRS99' AND
+                  "STG_VIP_DISTRIBUTOR_SALES_RANKED"."RANK" = 1
         name: STG_VIP_DISTRIBUTOR_SALES
         noLinkRefs: []
   name: STG_VIP_DISTRIBUTOR_SALES
