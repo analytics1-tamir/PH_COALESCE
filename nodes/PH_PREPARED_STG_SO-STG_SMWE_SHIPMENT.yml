@@ -11,7 +11,7 @@ operation:
   database: ""
   deployEnabled: true
   description: ""
-  isMultisource: false
+  isMultisource: true
   locationName: PH_PREPARED_STG_SO
   materializationType: table
   metadata:
@@ -28,6 +28,10 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
+            transform: ""
+          - columnReferences:
+              - columnCounter: 58a724b0-cac5-4349-a5b8-6a3125c36cc0
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
             transform: ""
       - acceptedValues:
           strictMatch: true
@@ -48,6 +52,10 @@ operation:
               - columnCounter: a3409cac-114f-494b-8e71-30bbe04cce88
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
+          - columnReferences:
+              - columnCounter: 6cb621a5-0484-47b6-b299-c7160392d569
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
@@ -63,6 +71,10 @@ operation:
               - columnCounter: 98cc6d98-1555-4411-9444-7534d91f4520
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
+          - columnReferences:
+              - columnCounter: 28f6426b-bc6a-4122-b9b4-7d500ba0af6c
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bb1731f6-0c1e-403f-a758-9852ce0cb41f
@@ -74,6 +86,10 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
+            transform: ""
+          - columnReferences:
+              - columnCounter: 690b10df-ced2-48e2-8e98-9ff450798468
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
             transform: ""
       - acceptedValues:
           strictMatch: true
@@ -93,6 +109,10 @@ operation:
           - columnReferences:
               - columnCounter: 732da82b-c302-4546-be67-85e57dc1af66
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
+            transform: ""
+          - columnReferences:
+              - columnCounter: 0610ebb8-7d06-4202-a245-6cbec9ce1ad2
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -114,6 +134,10 @@ operation:
               - columnCounter: b59add36-e227-4aab-a2f0-9c17ef0f01d1
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
+          - columnReferences:
+              - columnCounter: 5be1f3a3-caac-4c77-80f5-25682bb783c8
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -133,6 +157,10 @@ operation:
           - columnReferences:
               - columnCounter: 2397e60c-6722-45bf-aaa5-8866e43b855d
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
+            transform: ""
+          - columnReferences:
+              - columnCounter: c3e98179-1edb-43f2-8a1c-922dc33b8842
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -154,6 +182,10 @@ operation:
               - columnCounter: 490526e2-efa3-4564-b583-20d4cc02c498
                 stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
             transform: ""
+          - columnReferences:
+              - columnCounter: c05ec1e1-a781-4548-80e7-fb12abc3ca67
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -173,6 +205,10 @@ operation:
           - columnReferences:
               - columnCounter: 48f8f477-c46f-480c-98c1-2d3c07e0f524
                 stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
+            transform: ""
+          - columnReferences:
+              - columnCounter: 9e03998a-be35-4eda-a21d-0212681f575e
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
             transform: ""
         systemColumnType: None
       - acceptedValues:
@@ -194,6 +230,10 @@ operation:
               - columnCounter: d4403189-bba5-4a3b-96d1-30fb0b36958c
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
+          - columnReferences:
+              - columnCounter: 529b692a-5bc1-4648-84d7-b4739c4c793c
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -214,6 +254,10 @@ operation:
               - columnCounter: "0"
                 stepCounter: "0"
             transform: "'Shipped'"
+          - columnReferences:
+              - columnCounter: 500e9939-ee02-4bf6-b060-ddbd2639da04
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
@@ -227,6 +271,10 @@ operation:
         sourceColumnReferences:
           - columnReferences: []
             transform: ""
+          - columnReferences:
+              - columnCounter: ba0cec58-1291-414d-b2d1-887c796f0099
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
       - acceptedValues:
           strictMatch: true
           values: []
@@ -237,7 +285,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
-        description: ""
+        description: Convert quantity from FCE to Unit
         keyColumnType: None
         name: QUANTITY_BY_UNIT
         nullable: true
@@ -246,6 +294,10 @@ operation:
               - columnCounter: 5b49e139-819b-4f10-9782-3df084b0c5e2
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
             transform: ""
+          - columnReferences:
+              - columnCounter: 51f50aa1-a81e-4427-858b-746326425408
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
@@ -253,7 +305,7 @@ operation:
           stepCounter: 61484ebc-511a-4323-9f07-a2e3984ae215
         config: {}
         dataType: NUMBER(38,0)
-        description: Convert various quantities to FCE
+        description: ""
         name: QUANTITY_BY_FCE
         nullable: true
         sourceColumnReferences:
@@ -267,6 +319,10 @@ operation:
                   WHEN "FACT_SHIPMENTS_NEW"."UNIT_OF_MEASURE" = 'KE' THEN "FACT_SHIPMENTS_NEW"."QUANTITY_SHIPPED" * "DIM_ITEM"."BOTTLE_FCE"
                   ELSE "FACT_SHIPMENTS_NEW"."QUANTITY_SHIPPED"
               END
+          - columnReferences:
+              - columnCounter: 1bbc1716-0af5-4b3b-a64c-00d79511c3fc
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
+            transform: ""
       - acceptedValues:
           strictMatch: true
           values: []
@@ -285,6 +341,10 @@ operation:
           - columnReferences:
               - columnCounter: 2415b38b-a178-44a3-b7cd-19c8cb40605f
                 stepCounter: bd0d708e-5d55-4a22-bae1-48c946a5cf44
+            transform: ""
+          - columnReferences:
+              - columnCounter: e513a9eb-5833-49d0-9b5c-f9b6f98484fa
+                stepCounter: ca755402-6492-4fb9-a6d1-da07cb493aba
             transform: ""
         systemColumnType: None
     cteString: ""
@@ -305,7 +365,18 @@ operation:
             FROM {{ ref('PH_RAW_SMWE', 'FACT_SHIPMENTS_NEW') }} "FACT_SHIPMENTS_NEW"
             LEFT JOIN {{ ref('PH_PREPARED_SO', 'DIM_ITEM') }} "DIM_ITEM"
                 ON TO_VARCHAR("FACT_SHIPMENTS_NEW"."ITEM_NUMBER") = "DIM_ITEM"."ITEM_NUMBER"
-        name: STG_SMWE_SHIPMENT
+        name: SRC1
+        noLinkRefs: []
+      - aliases:
+          STG_SMWE_SHIPMENT_SEP_2024: ca755402-6492-4fb9-a6d1-da07cb493aba
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_SMWE_SHIPMENT_SEP_2024
+        join:
+          joinCondition: FROM {{ ref('PH_PREPARED_STG_SO', 'STG_SMWE_SHIPMENT_SEP_2024') }} "STG_SMWE_SHIPMENT_SEP_2024"
+        name: SRC2
         noLinkRefs: []
   name: STG_SMWE_SHIPMENT
   overrideSQL: false
