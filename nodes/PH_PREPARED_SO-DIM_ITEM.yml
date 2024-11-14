@@ -115,20 +115,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3b601088-5ecf-45f7-8982-880071d467f7
-          stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
-        config: {}
-        dataType: FLOAT
-        description: ""
-        name: BOTTLE_FCE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 957e22ef-f016-44cc-9a20-2af1003e2830
-                stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: b29decd7-2c32-4888-8032-5d94c7b6f814
           stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
         config: {}
@@ -139,20 +125,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: f5ee89ce-0ce9-460e-b3e7-45bc9b5436b7
-                stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: a3a8d0d7-5212-498a-bdd4-18ce054033ec
-          stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
-        config: {}
-        dataType: FLOAT
-        description: ""
-        name: BOTTLE_TO_CASE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 63357555-3568-41fe-a51a-29010b06b23c
                 stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
             transform: ""
       - appliedColumnTests: {}
@@ -707,18 +679,32 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: bb75f8b8-8176-4806-a5e2-537ba887a628
+          columnCounter: 3b601088-5ecf-45f7-8982-880071d467f7
           stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
         config: {}
-        dataType: VARCHAR
+        dataType: FLOAT
         description: ""
-        name: ITEM_TO_9L
+        name: BOTTLE_FCE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: aaea83d1-d2a9-4546-8aaf-4460563c19c2
+              - columnCounter: 957e22ef-f016-44cc-9a20-2af1003e2830
                 stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
-            transform: ""
+            transform: COALESCE("STG_HISTORICAL_ITEM_JOIN"."BOTTLE_FCE", "STG_HISTORICAL_ITEM_JOIN"."ITEM_TO_9L")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a3a8d0d7-5212-498a-bdd4-18ce054033ec
+          stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: BOTTLE_TO_CASE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 63357555-3568-41fe-a51a-29010b06b23c
+                stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
+            transform: COALESCE("STG_HISTORICAL_ITEM_JOIN"."BOTTLE_TO_CASE", "STG_HISTORICAL_ITEM_JOIN"."ITEM_TO_SU")
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c65530c0-ce26-44a8-80d0-a5e9f7412e6e
@@ -735,16 +721,30 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f86ffa50-abd9-4ff6-9251-5f3a7daf929d
+          columnCounter: f8d3141a-a9c6-45db-ac37-8b52800557b2
+          stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: SU_FCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7fd043a-f719-4d1d-aa11-dee843b79627
+                stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
+            transform: COALESCE("STG_HISTORICAL_ITEM_JOIN"."SU_FCE", "STG_HISTORICAL_ITEM_JOIN"."SU_TO_9L")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d20773fb-ad7b-40fd-bdcc-d772c143e3b0
           stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
         config: {}
         dataType: VARCHAR
         description: ""
-        name: ITEM_TO_SU
+        name: SU_TO_GALLON
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: bcf45c4d-33d3-4a23-b33c-a0f7932ccbe6
+              - columnCounter: 639a7b71-d747-4803-9d05-49b683b9a674
                 stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
             transform: ""
       - appliedColumnTests: {}
@@ -1142,48 +1142,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 9d497d4d-12a9-40ee-ac7c-18344e46f7be
-                stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: f8d3141a-a9c6-45db-ac37-8b52800557b2
-          stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
-        config: {}
-        dataType: FLOAT
-        description: ""
-        name: SU_FCE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: a7fd043a-f719-4d1d-aa11-dee843b79627
-                stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: b4d89200-9e86-4caa-9db9-d086fed44ef9
-          stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
-        config: {}
-        dataType: VARCHAR
-        description: ""
-        name: SU_TO_9L
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: e4740ddc-7dea-4e0c-9cac-2bb30851bae1
-                stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: d20773fb-ad7b-40fd-bdcc-d772c143e3b0
-          stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
-        config: {}
-        dataType: VARCHAR
-        description: ""
-        name: SU_TO_GALLON
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 639a7b71-d747-4803-9d05-49b683b9a674
                 stepCounter: 373488f7-abd2-4628-8bc4-4851baa35c6a
             transform: ""
       - acceptedValues:
