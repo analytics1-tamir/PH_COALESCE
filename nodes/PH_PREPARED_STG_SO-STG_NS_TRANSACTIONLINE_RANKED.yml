@@ -1638,14 +1638,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          STG_NS_TRANSACTIONLINE: 08dcccb4-9c87-4dcb-a45e-32ef55dc783a
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: PH_PREPARED_STG_SO
             nodeName: STG_NS_TRANSACTIONLINE
         join:
-          joinCondition: FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_TRANSACTIONLINE') }} "STG_NS_TRANSACTIONLINE"
+          joinCondition: |-
+            FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_TRANSACTIONLINE') }} "STG_NS_TRANSACTIONLINE"
+            WHERE "STG_NS_TRANSACTIONLINE"."ACCOUNTINGLINETYPE" = 'ASSET'
         name: STG_NS_TRANSACTIONLINE_RANKED
         noLinkRefs: []
   name: STG_NS_TRANSACTIONLINE_RANKED
