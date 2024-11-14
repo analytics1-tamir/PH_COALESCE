@@ -1,0 +1,227 @@
+fileVersion: 1
+id: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+name: FCT_BUDGET
+operation:
+  config:
+    postSQL: ""
+    preSQL: TRUNCATE {{ ref('PH_PREPARED_SO', 'FCT_BUDGET') }};
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: Breakdown of amount goals for item and distributor
+  isMultisource: false
+  locationName: PH_PREPARED_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20544f2a-cfbd-4a31-8c3b-2d5b87bb768f
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: ID_BUDGET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84a34f44-1877-402e-a1e1-477a36aa1090
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a9fa278-1f7f-4148-bda4-8c9297a76a0d
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        isBusinessKey: true
+        name: ID_BUDGET_LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43aafbd5-5bba-484a-83d8-015b3e0d0f20
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c3324e7-e759-48b1-a8e9-726ad2208f77
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_JOURNAL_ACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 591d5cf2-c833-4137-b98e-90d194ede84f
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fcc48a20-ee57-441b-a3e3-aca2a07e1f86
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_CUSTOMER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 940c32f2-e8a3-42e4-8694-f11a62c059af
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3836e02f-a890-4d7c-91af-3d7c38ba6c30
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ITEM_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c379b126-ce9a-4253-9410-a3bfc86dc27f
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5934d6a-bfbb-4042-8b51-28c425428366
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b59396fb-ac54-40a4-88f5-006b696a97fa
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a0c4c24-12b3-49da-a710-5029e8b64109
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: DATE
+        description: There are some period's that are not "MON YYYY" we don't anticipate using those, but we rule out the possibility of this table breaking on refresh
+        name: PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c58c6f2-b45b-4159-be12-8ec48fe6996e
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e8a2518-e4ac-42a5-a493-a8d0d7dc398a
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QTY_BOTTLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 535c33e2-558c-4994-97b1-331a331535d4
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6d5e450-91b8-46d2-915a-95995c9a42f9
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QTY_FCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c39d9dbf-6353-4beb-8eaa-eaa14951194d
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec71e532-3710-4793-bd87-6790399ab6c1
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QTY_CASE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5586d356-97fa-48de-82f4-8b3742380233
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: adecc0f0-51b7-43e7-8792-4884053ff523
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_LASTMODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 852d5696-e030-4ca5-9f20-44f83b80a062
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3adf0131-e399-44a7-aa2f-59308b34526b
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f56a82d8-e4b7-4b18-b823-4421cb8c9be6
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_BUDGET_QUANTITY
+        join:
+          joinCondition: FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_BUDGET_QUANTITY') }} "STG_NS_BUDGET_QUANTITY"
+        name: FCT_BUDGET
+        noLinkRefs: []
+  name: FCT_BUDGET
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

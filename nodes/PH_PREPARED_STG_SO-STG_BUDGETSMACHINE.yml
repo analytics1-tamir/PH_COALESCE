@@ -1,0 +1,112 @@
+fileVersion: 1
+id: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+name: STG_BUDGETSMACHINE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9a0e938-4ec7-4c7c-9fc5-cdabecdc02d3
+          stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_BUDGET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3dead853-8c03-46ce-bc13-28ab151ebba7
+                stepCounter: 6f851945-a4ac-4692-8244-9ab7029d2776
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1606424e-b25d-462b-8d85-6a3d40d386d8
+          stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_BUDGET_LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c38d8df-3328-4167-9d16-9e6d2fa1baa3
+                stepCounter: 6f851945-a4ac-4692-8244-9ab7029d2776
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39aeecca-4dd5-4b34-b7da-1cd63d0a0bcd
+          stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 80fcc166-decf-499a-8acb-7e761aaa1338
+                stepCounter: 6f851945-a4ac-4692-8244-9ab7029d2776
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5373042-4df8-408d-b13c-3029e3caa693
+          stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3a536b9-d2fc-4a24-b232-5bed58f7a005
+                stepCounter: 6f851945-a4ac-4692-8244-9ab7029d2776
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7015285-918f-4af2-a1ee-76aa6cec8ad9
+          stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_LASTMODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0caef3df-3b89-4420-ba4e-695d16264f44
+                stepCounter: 6f851945-a4ac-4692-8244-9ab7029d2776
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BUDGETSMACHINE: 6f851945-a4ac-4692-8244-9ab7029d2776
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_NS
+            nodeName: BUDGETSMACHINE
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_NS', 'BUDGETSMACHINE') }} "BUDGETSMACHINE"
+            WHERE "BUDGETSMACHINE"."_FIVETRAN_DELETED" = FALSE
+        name: STG_BUDGETSMACHINE
+        noLinkRefs: []
+  name: STG_BUDGETSMACHINE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,205 @@
+fileVersion: 1
+id: 351412bd-b369-4f84-b99e-8142f500fe11
+name: STG_NS_BUDGET_JOIN
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b079bc2-e223-457c-895a-0cf6cd22adb1
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_BUDGET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c9a0e938-4ec7-4c7c-9fc5-cdabecdc02d3
+                stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b4d433e-338a-4606-bc8a-3c187050da12
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_BUDGET_LINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1606424e-b25d-462b-8d85-6a3d40d386d8
+                stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 341eecd7-a83e-4fa0-8328-600128cc21e6
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ID_JOURNAL_ACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b318adb0-5a98-43d5-9b49-a5bb9ca103f9
+                stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b6b0bc6-8bb6-4888-a00d-c81aa0687c64
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ID_CUSTOMER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93d2b5e5-f746-487b-97ac-a91e53a7014d
+                stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13f1861d-7391-475c-8a6a-e76ee72be309
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ITEM_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 09de21ce-bc66-456b-8ebb-cc76fa34257d
+                stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d6b136f-1acc-4dd6-afd6-e9f18bb2f608
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 39aeecca-4dd5-4b34-b7da-1cd63d0a0bcd
+                stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4457ff00-eed8-4233-9c12-3f5b16d59e99
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: There are some period's that are not "MON YYYY" we don't anticipate using those, but we rule out the possibility of this table breaking on refresh
+        keyColumnType: None
+        name: PERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c57ef17e-cd98-45cd-a143-ab4916086e59
+                stepCounter: 7e19cba0-d9d7-4e60-ab4f-0b094929e42d
+            transform: |-
+              CASE
+                  WHEN "STG_NS_ACCOUNTINGPERIOD"."ISPOSTING" = TRUE THEN TO_DATE("STG_NS_ACCOUNTINGPERIOD"."PERIODNAME", 'MON YYYY')
+                  ELSE NULL
+              END
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90f72cfa-da28-4298-abb4-5d49b4031206
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e5373042-4df8-408d-b13c-3029e3caa693
+                stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98d31092-e3a2-48b0-923e-9164ed5a813e
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_LASTMODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7015285-918f-4af2-a1ee-76aa6cec8ad9
+                stepCounter: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_BUDGETSMACHINE: 28875cf4-f6ec-4162-b13a-e3ce57c688f5
+          STG_NS_ACCOUNTINGPERIOD: 7e19cba0-d9d7-4e60-ab4f-0b094929e42d
+          STG_NS_BUDGETS: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_BUDGETSMACHINE
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_ACCOUNTINGPERIOD
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_BUDGETS
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_PREPARED_STG_SO', 'STG_BUDGETSMACHINE') }} "STG_BUDGETSMACHINE"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_BUDGETS') }} "STG_NS_BUDGETS"
+                ON "STG_BUDGETSMACHINE"."ID_BUDGET" = "STG_NS_BUDGETS"."ID_BUDGET"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_ACCOUNTINGPERIOD') }} "STG_NS_ACCOUNTINGPERIOD"
+                ON "STG_BUDGETSMACHINE"."ID_PERIOD" = "STG_NS_ACCOUNTINGPERIOD"."ID_PERIOD"
+        name: STG_NS_BUDGET_JOIN
+        noLinkRefs: []
+  name: STG_NS_BUDGET_JOIN
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,238 @@
+fileVersion: 1
+id: 73d8e092-1160-4a0f-9d99-9edf0b755947
+name: STG_NS_BUDGETS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e0a11c2-fb1f-4914-95e0-45af1059b06b
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_BUDGET
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1ad75383-e747-45d7-bb87-b7b2838c0730
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b318adb0-5a98-43d5-9b49-a5bb9ca103f9
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_JOURNAL_ACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 093c1920-7d18-43de-8ee0-791b90ed5c5e
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93d2b5e5-f746-487b-97ac-a91e53a7014d
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_CUSTOMER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2515850b-c19d-48b3-a67e-367a77039657
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 235f4772-7e7f-4e58-ac57-476830c725a2
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ACCOUNTINGBOOK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46f66894-0a61-49b8-9f49-97456175a2f2
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09de21ce-bc66-456b-8ebb-cc76fa34257d
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ITEM_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 221e80ec-3af0-4fe2-86b9-fbb333126c84
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55079c4e-0c2b-4d35-9de6-f94c6ef5c457
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c89a28d7-33ce-44ed-84ec-b22adf157895
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b6e9d76-9a61-4d10-bb4b-5e71e455da5b
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CLASS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6b8fb0f-f1a4-459e-ab6d-db20ad281d32
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1a81fff-4304-4aa8-a522-16f3338ba3b0
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CURRENCY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0144c4b-74e5-4d76-b407-b84207b11abf
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f0056d-fe95-4637-9e46-2f343a35717b
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DEPARTMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8e066c5-2dc2-485b-b7aa-93e85cf174a1
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a3508fe-e734-4254-b601-5ec44f461d0b
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79e52517-df43-4018-a3ab-c16c8d0fea51
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4c4b786-18c0-4f11-a3fa-88b5e97d460d
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7beefcb9-97cb-429f-b176-4b286b7cffae
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdc27708-c0a3-461f-b04b-04f8d8c7a753
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: TOTAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbe27a01-f65c-4a6c-be70-1f86e1fbdb38
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08a7bad4-86ba-4eab-84d3-72e5861fea23
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6085efa4-a4e6-4228-bcd6-c43dde1d5832
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb90b3b6-0b95-4a96-94cd-98d95825aeab
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_LASTMODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cdbd6911-7231-4052-8d2f-93fa1ca7dcba
+                stepCounter: cd127f34-3e85-485b-a499-5882057a6d6d
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BUDGETS: cd127f34-3e85-485b-a499-5882057a6d6d
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_NS
+            nodeName: BUDGETS
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_NS', 'BUDGETS') }} "BUDGETS"
+            WHERE "BUDGETS"."_FIVETRAN_DELETED" = FALSE
+        name: STG_NS_BUDGETS
+        noLinkRefs: []
+  name: STG_NS_BUDGETS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
