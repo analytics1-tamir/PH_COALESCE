@@ -8,7 +8,7 @@ operation:
     testsEnabled: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: Region and sub-region mapping
   isMultisource: false
   locationName: PH_PREPARED_SO
   materializationType: table

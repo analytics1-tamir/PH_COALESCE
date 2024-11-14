@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: VIP account combined with class of trade mapping
   isMultisource: false
   locationName: PH_PREPARED_STG_SO
   materializationType: table
@@ -195,7 +195,7 @@ operation:
         config: {}
         dataType: VARCHAR(256)
         defaultValue: ""
-        description: ""
+        description: Full address used for PBI map visual
         keyColumnType: None
         name: FULL_ADDRESS
         nullable: true
@@ -314,7 +314,7 @@ operation:
           stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
         config: {}
         dataType: VARCHAR(256)
-        description: ""
+        description: Chain status description including Costco club designation
         name: CHAIN_STATUS
         nullable: true
         sourceColumnReferences:

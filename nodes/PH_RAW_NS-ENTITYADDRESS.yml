@@ -5,7 +5,7 @@ operation:
   database: ""
   dataset: ""
   deployEnabled: true
-  description: ""
+  description: Billing and shipping address mapping for NetSuite entities. We use this for distributors
   locationName: PH_RAW_NS
   metadata:
     columns:

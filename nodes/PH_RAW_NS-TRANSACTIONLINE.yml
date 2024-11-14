@@ -5,7 +5,7 @@ operation:
   database: ""
   dataset: ""
   deployEnabled: true
-  description: ""
+  description: NeSuite sub-rows of items per transaction (if it exists for that transaction type)
   locationName: PH_RAW_NS
   metadata:
     columns:

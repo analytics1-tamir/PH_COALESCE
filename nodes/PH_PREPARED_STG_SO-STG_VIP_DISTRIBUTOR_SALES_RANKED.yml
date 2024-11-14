@@ -671,7 +671,10 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
-        description: ""
+        description: |-
+          De-dupe cases where a distributor item is mapped to two different items in the historical (SLSDA.HIST) and current (SLSDA.) files.
+
+          Flip 1 and 2 to keep current or historical supplier item number
         keyColumnType: None
         name: RANK
         nullable: true

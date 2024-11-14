@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: Coalesce matching columns by keeping NetSuite first and VIP second
   isMultisource: false
   locationName: PH_PREPARED_STG_SO
   materializationType: table

@@ -8,7 +8,7 @@ operation:
     testsEnabled: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: List of distributors from NetSuite, VIP, and historical SMWE
   isMultisource: false
   locationName: PH_PREPARED_SO
   materializationType: table

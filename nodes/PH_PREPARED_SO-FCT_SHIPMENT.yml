@@ -8,7 +8,7 @@ operation:
     testsEnabled: true
   database: ""
   deployEnabled: true
-  description: First staging node for transactions table.
+  description: Shipments from NetSuite and SMWE
   isMultisource: false
   locationName: PH_PREPARED_SO
   materializationType: table

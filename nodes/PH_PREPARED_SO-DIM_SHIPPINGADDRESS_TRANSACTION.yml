@@ -8,7 +8,7 @@ operation:
     testsEnabled: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: NetSuite shipping address mapping for transactions
   isMultisource: false
   locationName: PH_PREPARED_SO
   materializationType: table

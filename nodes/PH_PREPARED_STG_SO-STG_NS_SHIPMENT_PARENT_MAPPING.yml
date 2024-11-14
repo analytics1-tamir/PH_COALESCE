@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: First staging node for transactions table.
+  description: Get the parent transaction type. This is used for removing shipments that are just warehouse to warehouse
   isMultisource: false
   locationName: PH_PREPARED_STG_SO
   materializationType: table

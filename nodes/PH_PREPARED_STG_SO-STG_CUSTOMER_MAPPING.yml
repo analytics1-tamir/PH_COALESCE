@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: Map regions and country names
   isMultisource: false
   locationName: PH_PREPARED_STG_SO
   materializationType: table
@@ -345,7 +345,7 @@ operation:
           stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
         config: {}
         dataType: VARCHAR(256)
-        description: ""
+        description: "'SGWS' should be one category and the rest are considered 'Independent'"
         name: AREA
         nullable: true
         sourceColumnReferences:
@@ -364,7 +364,7 @@ operation:
           stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
         config: {}
         dataType: VARCHAR(256)
-        description: ""
+        description: For 'SGWS' distributors get the sub-region. For 'Independent' distributors get their distributor grouping
         name: AREA_CHILD
         nullable: true
         sourceColumnReferences:

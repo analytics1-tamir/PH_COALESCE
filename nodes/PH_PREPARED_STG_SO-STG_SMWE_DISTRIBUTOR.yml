@@ -107,7 +107,7 @@ operation:
           stepCounter: e04770da-1471-4a57-9b42-b36518dcf0ba
         config: {}
         dataType: VARCHAR(16777216)
-        description: ""
+        description: Mark 'Cruise/Other' for distributor's that show up as US but are actually international
         name: ADDRESS_COUNTRY_CODE
         nullable: true
         sourceColumnReferences:
@@ -699,7 +699,7 @@ operation:
           stepCounter: e04770da-1471-4a57-9b42-b36518dcf0ba
         config: {}
         dataType: VARCHAR(16777216)
-        description: ""
+        description: Re-map historical regions to new parent region
         name: DISTRIBUTOR_REGION
         nullable: true
         sourceColumnReferences:

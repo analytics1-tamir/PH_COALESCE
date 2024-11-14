@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: First staging node for transactions table.
+  description: Union current NetSuite shipments with historical SMWE shipments
   isMultisource: true
   locationName: PH_PREPARED_STG_SO
   materializationType: table
@@ -73,7 +73,10 @@ operation:
           stepCounter: 394cdba8-cf8e-4230-ba38-27f8d7a839b0
         config: {}
         dataType: VARCHAR
-        description: ""
+        description: |-
+          Hardcoded Hawaii and Kansas distributor fix:
+          1.) Map Hawaii to parent distributor
+          2.) Map Kansas to its singulra VIP distributor
         name: ID_DISTRIBUTOR_NS
         nullable: true
         sourceColumnReferences:

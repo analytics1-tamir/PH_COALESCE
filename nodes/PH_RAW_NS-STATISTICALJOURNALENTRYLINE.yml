@@ -5,7 +5,7 @@ operation:
   database: ""
   dataset: ""
   deployEnabled: true
-  description: ""
+  description: NetSuite statistical accounts. Breakdown of distributors per journal
   locationName: PH_RAW_NS
   metadata:
     columns:

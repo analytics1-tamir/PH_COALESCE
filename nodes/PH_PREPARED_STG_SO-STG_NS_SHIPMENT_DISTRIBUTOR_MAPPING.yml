@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: First staging node for transactions table.
+  description: Get the join key for distributors because it could either come from NetSuite or VIP and SMWE
   isMultisource: false
   locationName: PH_PREPARED_STG_SO
   materializationType: table

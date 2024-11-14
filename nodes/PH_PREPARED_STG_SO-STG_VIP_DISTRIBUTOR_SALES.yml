@@ -141,7 +141,7 @@ operation:
           stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
         config: {}
         dataType: FLOAT
-        description: ""
+        description: Convert to bottle by checking unit of measure
         name: QTY_BOTTLE
         nullable: true
         sourceColumnReferences:
@@ -160,7 +160,7 @@ operation:
           stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
         config: {}
         dataType: FLOAT
-        description: ""
+        description: Convert to FCE by checking unit of measure
         name: QTY_FCE
         nullable: true
         sourceColumnReferences:
@@ -179,7 +179,7 @@ operation:
           stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
         config: {}
         dataType: FLOAT
-        description: ""
+        description: Convert to physical case by checking unit of measure
         name: QTY_CASE
         nullable: true
         sourceColumnReferences:
@@ -212,7 +212,7 @@ operation:
           stepCounter: cb9646a6-9f01-4914-ad8a-7c4bcc4bc6d0
         config: {}
         dataType: VARCHAR(256)
-        description: ""
+        description: Hardcoded invoice type descriptions
         name: TRANSACTION_DESCRIPTION
         nullable: true
         sourceColumnReferences:

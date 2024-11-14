@@ -8,7 +8,7 @@ operation:
     testsEnabled: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: VIP depletions by distributor per month (NOT USED)
   isMultisource: false
   locationName: PH_PREPARED_SO
   materializationType: table

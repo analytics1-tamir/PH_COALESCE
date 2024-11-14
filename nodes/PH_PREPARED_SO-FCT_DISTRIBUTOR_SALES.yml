@@ -8,7 +8,7 @@ operation:
     testsEnabled: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: VIP depletions by invoice. Gives us account and item level depletions.
   isMultisource: false
   locationName: PH_PREPARED_SO
   materializationType: table

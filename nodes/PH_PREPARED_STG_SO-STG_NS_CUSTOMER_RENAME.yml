@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: ""
+  description: Combine our mapping tables and main distributor list while removing unnecessary columns and renaming others
   isMultisource: false
   locationName: PH_PREPARED_STG_SO
   materializationType: table
@@ -23,7 +23,7 @@ operation:
           stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
         config: {}
         dataType: NUMBER(38,0)
-        description: ""
+        description: NetSuite Distributor ID
         name: ID_NS
         nullable: false
         sourceColumnReferences:
@@ -37,7 +37,7 @@ operation:
           stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
         config: {}
         dataType: VARCHAR(2040)
-        description: ""
+        description: NetSuite External ID
         name: ID_LEGACY
         nullable: true
         sourceColumnReferences:
@@ -79,7 +79,7 @@ operation:
           stepCounter: 1486dfab-6e00-44df-9a2e-2c25635fc7cb
         config: {}
         dataType: VARCHAR(256)
-        description: ""
+        description: Full name of contact
         name: CONTACT_NAME
         nullable: true
         sourceColumnReferences:

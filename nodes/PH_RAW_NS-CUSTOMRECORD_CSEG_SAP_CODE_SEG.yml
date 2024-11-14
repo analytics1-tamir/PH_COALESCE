@@ -5,7 +5,7 @@ operation:
   database: ""
   dataset: ""
   deployEnabled: true
-  description: ""
+  description: NetSuite various item categories and descriptions
   locationName: PH_RAW_NS
   metadata:
     columns:

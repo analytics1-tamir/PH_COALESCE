@@ -93,14 +93,18 @@ operation:
           stepCounter: b8cb9284-867b-4379-b8a9-6f6f235a8ce1
         config: {}
         dataType: VARCHAR(256)
-        description: ""
+        description: Create a country code for VIP distributors
         name: COUNTRY_CODE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 6389d47d-2886-4221-84da-7d0932ab90e3
                 stepCounter: 3e136df4-0c6d-4722-9fd8-aec23e1e3f51
-            transform: "'US'"
+            transform: |-
+              CASE
+                  WHEN "STG_VIP_DISTRIBUTOR"."STATE" IS NOT NULL THEN 'US'
+                  ELSE 'International'
+              END
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 062c91ed-280d-43a1-8cd4-0a05a3e15d2b
