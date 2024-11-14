@@ -77,7 +77,7 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: ID_CUSTOMER
+        name: ID_NS_CUSTOMER
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -97,7 +97,7 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: ITEM_NUMBER
+        name: ID_NS_ITEM
         nullable: true
         sourceColumnReferences:
           - columnReferences:

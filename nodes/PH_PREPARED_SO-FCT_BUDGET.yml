@@ -66,11 +66,25 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: ID_CUSTOMER
+        name: ID_NS_CUSTOMER
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 940c32f2-e8a3-42e4-8694-f11a62c059af
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 844cb239-7a3d-4343-9073-8b7a5ee72e4b
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_DISTRIBUTOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3b20782-4018-4380-a65a-5bff27c30a3e
                 stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
             transform: ""
       - appliedColumnTests: {}
@@ -80,11 +94,25 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
-        name: ITEM_NUMBER
+        name: ID_NS_ITEM
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: c379b126-ce9a-4253-9410-a3bfc86dc27f
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 320c0514-61eb-425a-a24e-4b3eb9238e40
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: ITEM_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8dba0419-dd34-449e-b4a0-498a5fa5da70
                 stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
             transform: ""
       - appliedColumnTests: {}
