@@ -1,0 +1,238 @@
+fileVersion: 1
+id: 63440b14-99f3-42f2-86d3-7f48e700320e
+name: STG_NS_INVENTORYBALANCE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff426bd2-14ef-48d7-8348-9f7d22472b2e
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: _FIVETRAN_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a276bcfa-13d8-4dc3-acea-6bf6bc218251
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5f92a05-a961-4283-87e9-12706f2b29b6
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_NS_ITEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e62f701a-1693-4294-bb90-60dc218fb6b8
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c064458f-c1c3-484f-a83d-ba1a9a6bd9b1
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BINNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0d1a54c-e1d4-4f84-beab-1b793f3c3755
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6c593a5-4152-4211-8bd6-9e205eb30002
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: COMMITTEDQTYPERLOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f33da60c-b199-42aa-857d-8969c045c35a
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a8fa923-f1aa-445a-8de2-d84259da4c73
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: COMMITTEDQTYPERSERIALLOTNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 72a25457-f32e-4104-8f73-5d408e9e57cc
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 558cf94a-3f93-413b-86a2-3ff95cd4cfa2
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: COMMITTEDQTYPERSERIALLOTNUMBERLOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f24759d3-8739-413c-b2a4-318a8b1c848a
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82457abf-bd0a-4176-8597-33f7711cb75e
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: CREATEDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a62c17cb-5f18-4ff9-9119-ab7aff4b1a8a
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3905ee21-3a77-49de-8df6-6c1420f95de5
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INVENTORYNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2839d16a-c97a-4e40-a6e4-0ddea1a35cf1
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 618d965d-c30b-4ad2-b6fa-40426a3fa441
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INVENTORYSTATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 790b32e5-15d1-4579-8d84-8669acd4b990
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b234a633-062e-42a1-8e84-f77b97424b07
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: LASTMODIFIEDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65e6e35f-039f-415c-95c4-d20090e96060
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff6b16ca-6936-455f-b2b2-826ec015dcf8
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 63d183f7-7baf-44b3-9b3b-74008a669435
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 915f0a0c-2c97-4faf-b03c-49bd0d1d1f68
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QUANTITYAVAILABLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cfcc9df2-69a9-485a-b065-1e0590ea0367
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10fb3ecf-3190-4e6d-be23-39bc5607859f
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QUANTITYONHAND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6c41bad-18ea-4947-97c6-576078fada1d
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2684c15d-f92a-40fd-93e1-a57106724a92
+          stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QUANTITYPICKED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64cec5d3-796b-4253-8d96-2cf6c880fefa
+                stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          INVENTORYBALANCE: e6767ee3-bd57-444b-b526-75a95d6defbc
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_NS
+            nodeName: INVENTORYBALANCE
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_NS', 'INVENTORYBALANCE') }} "INVENTORYBALANCE"
+            WHERE "INVENTORYBALANCE"."_FIVETRAN_DELETED" = FALSE
+        name: STG_NS_INVENTORYBALANCE
+        noLinkRefs: []
+  name: STG_NS_INVENTORYBALANCE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,288 @@
+fileVersion: 1
+id: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+name: STG_NS_INVENTORYBALANCE_JOIN
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30104682-9847-4d15-933b-299a0b5a0986
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID_NS_ITEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e337013d-f0df-41da-b4e5-a6a76a472fd5
+                stepCounter: fea4966a-39de-4407-ad8a-4c29c39e5996
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16eca867-540f-4dee-b291-712e57abd1a7
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: ITEM_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0090760-34f9-4e8f-aec4-2bc160181f48
+                stepCounter: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90330c47-0bdf-4c80-8e62-59727a9f2996
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LOCATION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_LOCATION\".\"NAME\""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f133f716-f38c-4fb4-a9ae-7729585339b7
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: LOCATION_PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STG_NS_LOCATION_PARENT\".\"NAME\""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 449bfdab-ebef-4ca6-917c-c124d651a107
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DATE_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b234a633-062e-42a1-8e84-f77b97424b07
+                stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5bc6fa7e-5a91-48b8-ae97-32f0c021ed96
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QUANTITYAVAILABLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 24fd7d4f-d240-4cc1-933b-529cc2493364
+                stepCounter: fea4966a-39de-4407-ad8a-4c29c39e5996
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8542932-9843-4fb5-9912-59e32711f1b1
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QUANTITYONHAND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e248d6e1-67a1-4d7d-8d03-51cead117c66
+                stepCounter: fea4966a-39de-4407-ad8a-4c29c39e5996
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea152a14-ee75-4af6-8133-d25b50fafb7d
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: QUANTITYPICKED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2684c15d-f92a-40fd-93e1-a57106724a92
+                stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a74ca1b7-9b14-4bde-912e-d4395dd8552c
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: QUANTITYCOMMITTED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e48cd3cb-5e8c-4f47-9f23-ee7aca55e1d3
+                stepCounter: fea4966a-39de-4407-ad8a-4c29c39e5996
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 604f019c-29d1-4c88-b130-ca5f8cdb80eb
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AVAILABLE_BALANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 915f0a0c-2c97-4faf-b03c-49bd0d1d1f68
+                stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9ac8deb-4e6e-4639-8a0b-b86a02f5ece2
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AVAILABLE_ONHAND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10fb3ecf-3190-4e6d-be23-39bc5607859f
+                stepCounter: 63440b14-99f3-42f2-86d3-7f48e700320e
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23a09f8f-b70d-4ce8-b16f-56b58ef14165
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: INVENTORY_VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: db043e14-b301-4617-ae27-db9110fd7f05
+                stepCounter: fea4966a-39de-4407-ad8a-4c29c39e5996
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd96afde-bd94-4962-82bf-c112e7d52f14
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: QUANTITYONORDER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d803f7b-1ee1-4a5c-bfed-fde9cdd98101
+                stepCounter: fea4966a-39de-4407-ad8a-4c29c39e5996
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eaad2317-2a35-4a4d-8027-446e2ad929a1
+          stepCounter: ce90f5c2-bfc7-4c02-ae32-32cb7161c88d
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: QUANTITYBACKORDERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9225f8b-4677-48e1-bb16-e7267ca2400d
+                stepCounter: fea4966a-39de-4407-ad8a-4c29c39e5996
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_ITEM: 3018f1a7-ee58-4387-b7cd-1f7349cb485f
+          STG_NS_INVENTORYBALANCE: 63440b14-99f3-42f2-86d3-7f48e700320e
+          STG_NS_INVENTORYITEMLOCATIONS: fea4966a-39de-4407-ad8a-4c29c39e5996
+          STG_NS_LOCATION: 44736a0e-35f2-4a8a-b8c3-8e0d3e960db8
+          STG_NS_LOCATION_PARENT: 44736a0e-35f2-4a8a-b8c3-8e0d3e960db8
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_PREPARED_SO
+            nodeName: DIM_ITEM
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_INVENTORYBALANCE
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_INVENTORYITEMLOCATIONS
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_NS_LOCATION
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_INVENTORYBALANCE') }} "STG_NS_INVENTORYBALANCE"
+            RIGHT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_INVENTORYITEMLOCATIONS') }} "STG_NS_INVENTORYITEMLOCATIONS"
+                ON "STG_NS_INVENTORYBALANCE"."ID_NS_ITEM" = "STG_NS_INVENTORYITEMLOCATIONS"."ID_NS_ITEM" AND
+                   "STG_NS_INVENTORYBALANCE"."LOCATION" = "STG_NS_INVENTORYITEMLOCATIONS"."LOCATION"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_LOCATION') }} "STG_NS_LOCATION"
+                ON "STG_NS_INVENTORYBALANCE"."LOCATION" = "STG_NS_LOCATION"."ID"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_LOCATION') }} "STG_NS_LOCATION_PARENT"
+                ON "STG_NS_INVENTORYBALANCE"."LOCATION" = "STG_NS_LOCATION_PARENT"."PARENT"
+            LEFT JOIN {{ ref('PH_PREPARED_SO', 'DIM_ITEM') }} "DIM_ITEM"
+                ON "STG_NS_INVENTORYBALANCE"."ID_NS_ITEM" = "DIM_ITEM"."ID_NS"
+        name: STG_NS_INVENTORYBALANCE_JOIN
+        noLinkRefs: []
+  name: STG_NS_INVENTORYBALANCE_JOIN
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,343 @@
+fileVersion: 1
+id: e6767ee3-bd57-444b-b526-75a95d6defbc
+name: INVENTORYBALANCE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: PH_RAW_NS
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a276bcfa-13d8-4dc3-acea-6bf6bc218251
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0d1a54c-e1d4-4f84-beab-1b793f3c3755
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: BINNUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f33da60c-b199-42aa-857d-8969c045c35a
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: COMMITTEDQTYPERLOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72a25457-f32e-4104-8f73-5d408e9e57cc
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: COMMITTEDQTYPERSERIALLOTNUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f24759d3-8739-413c-b2a4-318a8b1c848a
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: COMMITTEDQTYPERSERIALLOTNUMBERLOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a62c17cb-5f18-4ff9-9119-ab7aff4b1a8a
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: CREATEDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2839d16a-c97a-4e40-a6e4-0ddea1a35cf1
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INVENTORYNUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 790b32e5-15d1-4579-8d84-8669acd4b990
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: INVENTORYSTATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e62f701a-1693-4294-bb90-60dc218fb6b8
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ITEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65e6e35f-039f-415c-95c4-d20090e96060
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: LASTMODIFIEDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63d183f7-7baf-44b3-9b3b-74008a669435
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfcc9df2-69a9-485a-b065-1e0590ea0367
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYAVAILABLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6c41bad-18ea-4947-97c6-576078fada1d
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYONHAND
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64cec5d3-796b-4253-8d96-2cf6c880fefa
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYPICKED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96e056c6-3b3a-4a04-94ca-72a0530f0bc5
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a454549-d32e-4dfa-8d33-25a9e4cd21db
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 365f6e1f-7d26-4a1d-9a8c-d52fa75ef8a4
+          stepCounter: e6767ee3-bd57-444b-b526-75a95d6defbc
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('PH_RAW_NS', 'INVENTORYBALANCE') }}
+  name: INVENTORYBALANCE
+  schema: ""
+  sqlType: Source
+  table: INVENTORYBALANCE
+  type: sourceInput
+  version: 1
+type: Node

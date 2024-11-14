@@ -1,0 +1,438 @@
+fileVersion: 1
+id: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+name: INVENTORYITEMLOCATIONS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: PH_RAW_NS
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 707f2ef7-3fd8-49e1-9b0c-c6946c2f0ee7
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c40f3bfb-687a-4ce8-be36-9147f5b4c4c3
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ATPLEADTIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66880bd9-8b31-4cf2-959b-b35d3fc89394
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: AVERAGECOSTMLI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7f1ff3f-b6e8-4504-acdf-f5b1dbad7577
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: VARCHAR(120)
+        defaultValue: ""
+        description: ""
+        name: COSTACCOUNTINGSTATUS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e900f138-4486-41b3-9442-f778b19d937e
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: DEFAULTRETURNCOST
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63fabff7-14df-41fc-a5dd-9d20095f9c98
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ITEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6334a2e5-aee2-4087-badd-b91887b59bf4
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: LASTPURCHASEPRICEMLI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6f26d31b-a545-4e0f-a0ba-272fc23a7d66
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: LASTQUANTITYAVAILABLECHANGE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 66136fdb-8c5b-47cd-9038-0a9e9478c1bc
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4050f512-3427-4fe4-952c-8a862aa48f57
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LOCATIONCOSTINGGROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7576863a-c707-46e8-a85e-d38e2bca0423
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: ONHANDVALUEMLI
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0d7bc79-377c-4a87-9d3e-0b28eb76b75d
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: PREFERREDSTOCKLEVEL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69c9db8c-b60c-48a6-9c15-809dfbf18f38
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYAVAILABLE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28c462de-4314-465f-a1a4-936a5e640784
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYBACKORDERED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f1b3205-5a42-446b-97d0-e59b5b6f1a09
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYCOMMITTED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1981db84-edae-422e-959c-1327b77eb92c
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYINTRANSIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6f914e6-de40-4459-a714-ee44f7b0d9ab
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYONHAND
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b2fea22-b92c-4474-996e-80e0498eee54
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: QUANTITYONORDER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e28b5e6-52f4-4349-971b-93b3f26cc9ed
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: REORDERPOINT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5fb3bbf8-746a-42f0-9051-0bc258a0d36d
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2076f904-8942-45ee-abd9-cc0c2937ff7e
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38303d6e-8193-492e-b7f0-757647374f35
+          stepCounter: 963b72e8-545b-48c5-8e60-6fe9f010d66c
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('PH_RAW_NS', 'INVENTORYITEMLOCATIONS') }}
+  name: INVENTORYITEMLOCATIONS
+  schema: ""
+  sqlType: Source
+  table: INVENTORYITEMLOCATIONS
+  type: sourceInput
+  version: 1
+type: Node
