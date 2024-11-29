@@ -250,7 +250,8 @@ operation:
         join:
           joinCondition: |-
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_VIP_ITEM_RANKED') }} "STG_VIP_ITEM_RANKED"
-            WHERE "STG_VIP_ITEM_RANKED".RANK = 1
+            WHERE "STG_VIP_ITEM_RANKED".RANK = 1 AND
+                  "STG_VIP_ITEM_RANKED"."SUPPLIER_ITEM" IS NOT NULL
         name: STG_VIP_ITEM
         noLinkRefs: []
   name: STG_VIP_ITEM
