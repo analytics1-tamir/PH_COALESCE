@@ -227,6 +227,7 @@ operation:
           joinCondition: |-
             FROM {{ ref('PH_RAW_NS', 'BUDGETS') }} "BUDGETS"
             WHERE "BUDGETS"."_FIVETRAN_DELETED" = FALSE
+            AND "BUDGETS"."CATEGORY" = 3
         name: STG_NS_BUDGETS
         noLinkRefs: []
   name: STG_NS_BUDGETS
