@@ -3,7 +3,6 @@ id: e3739ec3-f6fd-44e1-ae39-efa4d7108f1b
 name: DISTRIBUTOR_SALES
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: VIP depletions by invoice. Gives us account and item level depletions.
   locationName: PH_RAW_VIP
@@ -883,12 +882,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_VIP', 'DISTRIBUTOR_SALES') }}
   name: DISTRIBUTOR_SALES
   schema: ""
   sqlType: Source
-  table: DISTRIBUTOR_SALES
   type: sourceInput
   version: 1
 type: Node
