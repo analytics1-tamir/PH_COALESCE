@@ -45,6 +45,26 @@ operation:
               - columnCounter: 43aafbd5-5bba-484a-83d8-015b3e0d0f20
                 stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 472dbc93-f8af-4dbe-bab9-89da5b313b3c
+          stepCounter: 82d87587-a953-48cc-a3ad-7a9f5c7190b3
+        config: {}
+        dataType: VARCHAR(320)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CATEGORY_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43b2ad0d-e48e-4be1-adcd-92f1a0ed5d26
+                stepCounter: bb155d7d-bd5d-4c59-baea-e784b3dbc09a
+            transform: ""
+        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0c3324e7-e759-48b1-a8e9-726ad2208f77

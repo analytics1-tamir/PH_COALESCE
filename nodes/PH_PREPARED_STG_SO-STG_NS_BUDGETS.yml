@@ -103,6 +103,34 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 3e6e98ea-1078-4bed-9924-925f7dd84e3f
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: CATEGORY_ISINACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: feff7f69-4401-4dc5-96b6-4037ce05b7e6
+                stepCounter: ede4c387-9eea-4252-aa8c-9287e0b77b94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98bcef92-9ee1-402a-90aa-1dc0d155e5e1
+          stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+        config: {}
+        dataType: VARCHAR(320)
+        description: ""
+        name: CATEGORY_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 373752b1-3cda-44bf-ad62-bca49f86cde6
+                stepCounter: ede4c387-9eea-4252-aa8c-9287e0b77b94
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 4b6e9d76-9a61-4d10-bb4b-5e71e455da5b
           stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
         config: {}
@@ -218,16 +246,20 @@ operation:
     sourceMapping:
       - aliases:
           BUDGETS: cd127f34-3e85-485b-a499-5882057a6d6d
+          STG_BUDGETCATEGORY: ede4c387-9eea-4252-aa8c-9287e0b77b94
         customSQL:
           customSQL: ""
         dependencies:
+          - locationName: PH_PREPARED_STG_SO
+            nodeName: STG_BUDGETCATEGORY
           - locationName: PH_RAW_NS
             nodeName: BUDGETS
         join:
           joinCondition: |-
             FROM {{ ref('PH_RAW_NS', 'BUDGETS') }} "BUDGETS"
+            LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_BUDGETCATEGORY') }} "STG_BUDGETCATEGORY"
+                ON "BUDGETS"."CATEGORY" = "STG_BUDGETCATEGORY"."ID"
             WHERE "BUDGETS"."_FIVETRAN_DELETED" = FALSE
-            AND "BUDGETS"."CATEGORY" = 3
         name: STG_NS_BUDGETS
         noLinkRefs: []
   name: STG_NS_BUDGETS

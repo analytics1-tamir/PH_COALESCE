@@ -65,6 +65,40 @@ operation:
                 stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
             transform: ""
         systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a34ab6f5-6a9a-428a-bf8a-ff9f1f87d97e
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55079c4e-0c2b-4d35-9de6-f94c6ef5c457
+                stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0239cfa-2306-42b9-9ecd-36555cedcf5f
+          stepCounter: 351412bd-b369-4f84-b99e-8142f500fe11
+        config: {}
+        dataType: VARCHAR(320)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CATEGORY_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98bcef92-9ee1-402a-90aa-1dc0d155e5e1
+                stepCounter: 73d8e092-1160-4a0f-9d99-9edf0b755947
+            transform: ""
+        systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
@@ -194,6 +228,8 @@ operation:
                 ON "STG_BUDGETSMACHINE"."ID_BUDGET" = "STG_NS_BUDGETS"."ID_BUDGET"
             LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_NS_ACCOUNTINGPERIOD') }} "STG_NS_ACCOUNTINGPERIOD"
                 ON "STG_BUDGETSMACHINE"."ID_PERIOD" = "STG_NS_ACCOUNTINGPERIOD"."ID_PERIOD"
+            
+            --WHERE "STG_NS_BUDGETS"."CATEGORY" = 3 (25AOPASK)
         name: STG_NS_BUDGET_JOIN
         noLinkRefs: []
   name: STG_NS_BUDGET_JOIN

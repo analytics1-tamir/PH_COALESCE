@@ -1,0 +1,99 @@
+fileVersion: 1
+id: ede4c387-9eea-4252-aa8c-9287e0b77b94
+name: STG_BUDGETCATEGORY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: PH_PREPARED_STG_SO
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09ca1c3e-a43d-4858-ab26-4601cbd0f810
+          stepCounter: ede4c387-9eea-4252-aa8c-9287e0b77b94
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15ce766f-a853-40da-85a3-451ba0e02c6d
+                stepCounter: c9112823-14db-4f62-81db-5b22956120cd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: abf5dcaf-359d-47b8-9690-8397a5932e99
+          stepCounter: ede4c387-9eea-4252-aa8c-9287e0b77b94
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: BUDGETTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d7bd2ccb-09dd-49b0-adc6-f47f6053f13a
+                stepCounter: c9112823-14db-4f62-81db-5b22956120cd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: feff7f69-4401-4dc5-96b6-4037ce05b7e6
+          stepCounter: ede4c387-9eea-4252-aa8c-9287e0b77b94
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ISINACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d254956-6c9a-4caa-9ab8-eb75c0c6a235
+                stepCounter: c9112823-14db-4f62-81db-5b22956120cd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 373752b1-3cda-44bf-ad62-bca49f86cde6
+          stepCounter: ede4c387-9eea-4252-aa8c-9287e0b77b94
+        config: {}
+        dataType: VARCHAR(320)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a230b76f-2c6a-4535-98d4-d1734a5204bf
+                stepCounter: c9112823-14db-4f62-81db-5b22956120cd
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          BUDGETCATEGORY: c9112823-14db-4f62-81db-5b22956120cd
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: PH_RAW_NS
+            nodeName: BUDGETCATEGORY
+        join:
+          joinCondition: |-
+            FROM {{ ref('PH_RAW_NS', 'BUDGETCATEGORY') }} "BUDGETCATEGORY"
+            WHERE "BUDGETCATEGORY"."_FIVETRAN_DELETED" = FALSE
+            AND "BUDGETCATEGORY"."DATE_DELETED" IS NULL
+        name: STG_BUDGETCATEGORY
+        noLinkRefs: []
+  name: STG_BUDGETCATEGORY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
