@@ -3,7 +3,6 @@ id: 3d953baf-10c9-4f3a-8a81-ea58edb9b307
 name: LOCATION
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: PH_RAW_NS
@@ -408,12 +407,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'LOCATION') }}
   name: LOCATION
   schema: ""
   sqlType: Source
-  table: LOCATION
   type: sourceInput
   version: 1
 type: Node

@@ -1512,7 +1512,7 @@ operation:
           columnCounter: 98772fd6-79db-403d-8e33-09b39e29b0a8
           stepCounter: e3753dc9-6b78-45be-90e5-2b245713d70d
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(256)
         description: ""
         name: DISTRIBUTOR
         nullable: true

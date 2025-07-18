@@ -3,7 +3,6 @@ id: e2af26d5-7bdd-4879-82c3-241ae1daf3cf
 name: SRSVALUE
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: VIP mapping file
   locationName: PH_RAW_VIP
@@ -180,12 +179,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_VIP', 'SRSVALUE') }}
   name: SRSVALUE
   schema: ""
   sqlType: Source
-  table: SRSVALUE
   type: sourceInput
   version: 1
 type: Node

@@ -36,7 +36,7 @@ operation:
           columnCounter: b187ee50-539b-418f-b31d-fca23b83b05a
           stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(256)
         description: ""
         name: DIST_ID
         nullable: true
@@ -372,7 +372,7 @@ operation:
           columnCounter: b5210956-acd8-45a2-8c57-80502a11cdf0
           stepCounter: 6ecf6466-330d-4ccc-9e21-d40d061bc97d
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(256)
         description: ""
         name: WHSE_ID
         nullable: true

@@ -3,7 +3,6 @@ id: 92818061-50cc-406e-b679-ca657c7384bb
 name: CUSTOMRECORD_CSEG_SAP_CODE_SEG
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite various item categories and descriptions
   locationName: PH_RAW_NS
@@ -484,12 +483,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'CUSTOMRECORD_CSEG_SAP_CODE_SEG') }}
   name: CUSTOMRECORD_CSEG_SAP_CODE_SEG
   schema: ""
   sqlType: Source
-  table: CUSTOMRECORD_CSEG_SAP_CODE_SEG
   type: sourceInput
   version: 1
 type: Node

@@ -3,7 +3,6 @@ id: 3ca321d5-8d80-4030-9223-b53cebfb368b
 name: COUNTRIES
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Standard ISO country code mapping
   locationName: PH_RAW_FILE
@@ -47,12 +46,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_FILE', 'COUNTRIES') }}
   name: COUNTRIES
   schema: ""
   sqlType: Source
-  table: COUNTRIES
   type: sourceInput
   version: 1
 type: Node

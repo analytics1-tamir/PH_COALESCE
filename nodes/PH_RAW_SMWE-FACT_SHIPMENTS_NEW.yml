@@ -3,7 +3,6 @@ id: bd0d708e-5d55-4a22-bae1-48c946a5cf44
 name: FACT_SHIPMENTS_NEW
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: SMWE historical shipments
   locationName: PH_RAW_SMWE
@@ -1643,12 +1642,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_SMWE', 'FACT_SHIPMENTS_NEW') }}
   name: FACT_SHIPMENTS_NEW
   schema: ""
   sqlType: Source
-  table: FACT_SHIPMENTS_NEW
   type: sourceInput
   version: 1
 type: Node

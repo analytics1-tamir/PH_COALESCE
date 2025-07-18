@@ -3,7 +3,6 @@ id: 6a74a7eb-775d-4e42-9593-5b45d4397c74
 name: ENTITYADDRESS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Billing and shipping address mapping for NetSuite entities. We use this for distributors
   locationName: PH_RAW_NS
@@ -370,12 +369,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'ENTITYADDRESS') }}
   name: ENTITYADDRESS
   schema: ""
   sqlType: Source
-  table: ENTITYADDRESS
   type: sourceInput
   version: 1
 type: Node

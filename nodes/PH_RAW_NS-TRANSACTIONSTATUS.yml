@@ -3,7 +3,6 @@ id: 1d68aa1b-3706-4a76-aa59-3d77ed720778
 name: TRANSACTIONSTATUS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite transaction status mapping
   locationName: PH_RAW_NS
@@ -180,12 +179,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'TRANSACTIONSTATUS') }}
   name: TRANSACTIONSTATUS
   schema: ""
   sqlType: Source
-  table: TRANSACTIONSTATUS
   type: sourceInput
   version: 1
 type: Node

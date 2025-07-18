@@ -3,7 +3,6 @@ id: f2e47aed-810b-40aa-9cb4-153b8d55fbdc
 name: DISTRIBUTOR
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: VIP list of distributors
   locationName: PH_RAW_VIP
@@ -541,12 +540,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_VIP', 'DISTRIBUTOR') }}
   name: DISTRIBUTOR
   schema: ""
   sqlType: Source
-  table: DISTRIBUTOR
   type: sourceInput
   version: 1
 type: Node

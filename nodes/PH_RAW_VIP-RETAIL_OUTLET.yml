@@ -3,7 +3,6 @@ id: 97d0065f-9368-4a30-a745-01344cacb6ef
 name: RETAIL_OUTLET
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: VIP account list
   locationName: PH_RAW_VIP
@@ -1377,12 +1376,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_VIP', 'RETAIL_OUTLET') }}
   name: RETAIL_OUTLET
   schema: ""
   sqlType: Source
-  table: RETAIL_OUTLET
   type: sourceInput
   version: 1
 type: Node

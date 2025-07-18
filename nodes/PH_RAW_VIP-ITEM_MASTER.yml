@@ -3,7 +3,6 @@ id: 3ae61a34-6901-419f-8e92-762301c64772
 name: ITEM_MASTER
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: VIP item list
   locationName: PH_RAW_VIP
@@ -389,12 +388,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_VIP', 'ITEM_MASTER') }}
   name: ITEM_MASTER
   schema: ""
   sqlType: Source
-  table: ITEM_MASTER
   type: sourceInput
   version: 1
 type: Node

@@ -2481,6 +2481,23 @@ operation:
             transform: ""
           - columnReferences: []
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4ebb8b4-0ad2-48b6-9f5b-ef5f627e748b
+          stepCounter: c7a5f1fe-52c0-4c16-a9af-62bbd7fbd4fe
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: CUSTITEM_ITEM_NUMBER_FLATTENED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a4320df-5e97-4f1e-8b53-ade130741c26
+                stepCounter: 7702dbf5-4c02-47d2-8ff2-ccfbb9550393
+            transform: ""
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

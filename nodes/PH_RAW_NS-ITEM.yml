@@ -3,7 +3,6 @@ id: 27008b95-c874-4ff3-9495-62e38b5846c3
 name: ITEM
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite item list
   locationName: PH_RAW_NS
@@ -2631,12 +2630,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'ITEM') }}
   name: ITEM
   schema: ""
   sqlType: Source
-  table: ITEM
   type: sourceInput
   version: 1
 type: Node

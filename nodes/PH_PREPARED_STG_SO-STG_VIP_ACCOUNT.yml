@@ -36,7 +36,7 @@ operation:
           columnCounter: da459a9a-0098-465c-9d96-a7d011cac700
           stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(256)
         description: ""
         name: ID_DISTRIBUTOR
         nullable: true
@@ -64,7 +64,7 @@ operation:
           columnCounter: d7370276-6b9c-43ad-ba0f-29ec1eedf6c7
           stepCounter: 197ae768-0120-4916-85b1-aef04a945bcc
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(256)
         description: ""
         name: ID_DEPLETION_WAREHOUSE
         nullable: true

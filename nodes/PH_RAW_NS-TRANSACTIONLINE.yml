@@ -3,7 +3,6 @@ id: f87257ad-1ca0-45fe-8db8-0a2d30fb1914
 name: TRANSACTIONLINE
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NeSuite sub-rows of items per transaction (if it exists for that transaction type)
   locationName: PH_RAW_NS
@@ -2232,12 +2231,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'TRANSACTIONLINE') }}
   name: TRANSACTIONLINE
   schema: ""
   sqlType: Source
-  table: TRANSACTIONLINE
   type: sourceInput
   version: 1
 type: Node

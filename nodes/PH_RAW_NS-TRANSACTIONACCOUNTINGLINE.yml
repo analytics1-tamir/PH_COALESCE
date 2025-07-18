@@ -3,7 +3,6 @@ id: 9631e814-8bbb-4d67-8932-a53e5aadfbc7
 name: TRANSACTIONACCOUNTINGLINE
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite sub-rows of item amounts per transaction (if it exists for that transaction type)
   locationName: PH_RAW_NS
@@ -484,12 +483,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'TRANSACTIONACCOUNTINGLINE') }}
   name: TRANSACTIONACCOUNTINGLINE
   schema: ""
   sqlType: Source
-  table: TRANSACTIONACCOUNTINGLINE
   type: sourceInput
   version: 1
 type: Node

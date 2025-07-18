@@ -3,7 +3,6 @@ id: 8e432b6b-9611-48cf-b3fd-51c4b7538f45
 name: DIM_DISTRIBUTOR
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: SMWE historical list of distributors
   locationName: PH_RAW_SMWE
@@ -1510,12 +1509,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_SMWE', 'DIM_DISTRIBUTOR') }}
   name: DIM_DISTRIBUTOR
   schema: ""
   sqlType: Source
-  table: DIM_DISTRIBUTOR
   type: sourceInput
   version: 1
 type: Node

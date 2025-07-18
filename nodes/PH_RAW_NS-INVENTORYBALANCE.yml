@@ -3,7 +3,6 @@ id: e6767ee3-bd57-444b-b526-75a95d6defbc
 name: INVENTORYBALANCE
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: PH_RAW_NS
@@ -332,12 +331,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'INVENTORYBALANCE') }}
   name: INVENTORYBALANCE
   schema: ""
   sqlType: Source
-  table: INVENTORYBALANCE
   type: sourceInput
   version: 1
 type: Node

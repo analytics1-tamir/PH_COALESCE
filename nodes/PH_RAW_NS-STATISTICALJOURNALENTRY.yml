@@ -3,7 +3,6 @@ id: b2045887-622b-4ec9-9333-2647aea0ae2f
 name: STATISTICALJOURNALENTRY
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite statistical accounts
   locationName: PH_RAW_NS
@@ -1130,12 +1129,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'STATISTICALJOURNALENTRY') }}
   name: STATISTICALJOURNALENTRY
   schema: ""
   sqlType: Source
-  table: STATISTICALJOURNALENTRY
   type: sourceInput
   version: 1
 type: Node

@@ -3,7 +3,6 @@ id: 676d2050-7b46-4c17-abbd-eff9a3f102fb
 name: DIM_ITEM
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: SMWE historical item list
   locationName: PH_RAW_SMWE
@@ -1757,12 +1756,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_SMWE', 'DIM_ITEM') }}
   name: DIM_ITEM
   schema: ""
   sqlType: Source
-  table: DIM_ITEM
   type: sourceInput
   version: 1
 type: Node

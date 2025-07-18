@@ -3,7 +3,6 @@ id: a6a10bc7-67c9-48c7-8f74-c5962357ac37
 name: DEPLETION_SUMMARY
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: VIP depletions by distributor per month (NOT USED)
   locationName: PH_RAW_VIP
@@ -845,12 +844,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_VIP', 'DEPLETION_SUMMARY') }}
   name: DEPLETION_SUMMARY
   schema: ""
   sqlType: Source
-  table: DEPLETION_SUMMARY
   type: sourceInput
   version: 1
 type: Node

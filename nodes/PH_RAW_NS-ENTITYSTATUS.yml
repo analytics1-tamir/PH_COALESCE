@@ -3,7 +3,6 @@ id: 9c3801c4-10eb-4b7b-9226-8952e4030114
 name: ENTITYSTATUS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: Customer status on NetSuite distributor
   locationName: PH_RAW_NS
@@ -218,12 +217,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'ENTITYSTATUS') }}
   name: ENTITYSTATUS
   schema: ""
   sqlType: Source
-  table: ENTITYSTATUS
   type: sourceInput
   version: 1
 type: Node

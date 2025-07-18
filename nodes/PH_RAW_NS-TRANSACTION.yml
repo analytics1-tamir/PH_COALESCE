@@ -3,7 +3,6 @@ id: bc44e6c1-1227-4f48-8b51-cf58094d7ed1
 name: TRANSACTION
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite items
   locationName: PH_RAW_NS
@@ -2745,12 +2744,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'TRANSACTION') }}
   name: TRANSACTION
   schema: ""
   sqlType: Source
-  table: TRANSACTION
   type: sourceInput
   version: 1
 type: Node

@@ -3,7 +3,6 @@ id: 963b72e8-545b-48c5-8e60-6fe9f010d66c
 name: INVENTORYITEMLOCATIONS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: PH_RAW_NS
@@ -427,12 +426,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'INVENTORYITEMLOCATIONS') }}
   name: INVENTORYITEMLOCATIONS
   schema: ""
   sqlType: Source
-  table: INVENTORYITEMLOCATIONS
   type: sourceInput
   version: 1
 type: Node

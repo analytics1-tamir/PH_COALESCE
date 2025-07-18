@@ -51,7 +51,7 @@ operation:
           columnCounter: 41fc1200-869b-46aa-84b1-1a97603623aa
           stepCounter: 8ff28fd2-3551-4c4d-83e6-ec800316b252
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(256)
         description: ""
         isBusinessKey: true
         name: ID_DISTRIBUTOR
@@ -81,7 +81,7 @@ operation:
           columnCounter: 67a38963-bb58-4e57-8325-928cab6dd46b
           stepCounter: 8ff28fd2-3551-4c4d-83e6-ec800316b252
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(256)
         description: ""
         name: ID_DEPLETION_WAREHOUSE
         nullable: true

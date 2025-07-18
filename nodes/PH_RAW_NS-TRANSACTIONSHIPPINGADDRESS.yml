@@ -3,7 +3,6 @@ id: 22c6bca1-7ac8-4f46-ac25-ed488bbe1fd2
 name: TRANSACTIONSHIPPINGADDRESS
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite shipping address mapping for transactions
   locationName: PH_RAW_NS
@@ -370,12 +369,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'TRANSACTIONSHIPPINGADDRESS') }}
   name: TRANSACTIONSHIPPINGADDRESS
   schema: ""
   sqlType: Source
-  table: TRANSACTIONSHIPPINGADDRESS
   type: sourceInput
   version: 1
 type: Node

@@ -3,7 +3,6 @@ id: f8a310a0-624e-48fa-b344-d572e300ea27
 name: STATISTICALJOURNALENTRYLINE
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: NetSuite statistical accounts. Breakdown of distributors per journal
   locationName: PH_RAW_NS
@@ -522,12 +521,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('PH_RAW_NS', 'STATISTICALJOURNALENTRYLINE') }}
   name: STATISTICALJOURNALENTRYLINE
   schema: ""
   sqlType: Source
-  table: STATISTICALJOURNALENTRYLINE
   type: sourceInput
   version: 1
 type: Node
