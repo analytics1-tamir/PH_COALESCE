@@ -203,6 +203,7 @@ operation:
                 stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
             transform: |-
               CASE
+                  WHEN "STG_CUSTOMER_MAPPING"."SHIPPING_COUNTRY" != 'US' THEN 'International'
                   WHEN "STG_CUSTOMER_MAPPING"."LEGACY_COUNTRY" != 'United States' THEN 'International'
                   ELSE "STG_CUSTOMER_MAPPING"."LEGACY_STATE"
               END
@@ -292,6 +293,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: b07a07ff-dd24-4a82-8cb2-db1fb2bee6b2
+          stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a910dafe-82e4-46c6-a955-b5a7d2e3dfb3
+                stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: a43b2c72-f2cd-4410-a9fc-7161136267fd
           stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
         config: {}
@@ -362,6 +377,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 65075790-c638-4de0-a534-a04041ccfe0a
+          stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 469f8590-4d71-4948-bae2-56172d4d59ac
+                stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 92cdd23d-4dd3-41c4-a0a5-a6bb7d413ff4
           stepCounter: 93ab91bb-d7c8-42ae-a1cc-57db8092331b
         config: {}
@@ -417,6 +446,7 @@ operation:
                 stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
             transform: |-
               CASE
+                  WHEN "STG_CUSTOMER_MAPPING"."SHIPPING_COUNTRY" != 'US' THEN 'International'
                   WHEN "STG_CUSTOMER_MAPPING"."LEGACY_COUNTRY" != 'United States' THEN 'International'
                   ELSE "STG_CUSTOMER_MAPPING"."REGION"
               END
@@ -435,6 +465,7 @@ operation:
                 stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
             transform: |-
               CASE
+                  WHEN "STG_CUSTOMER_MAPPING"."SHIPPING_COUNTRY" != 'US' THEN 'International'
                   WHEN "STG_CUSTOMER_MAPPING"."LEGACY_COUNTRY" != 'United States' THEN 'International'
                   ELSE "STG_CUSTOMER_MAPPING"."REGION"
               END
@@ -453,6 +484,7 @@ operation:
                 stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
             transform: |-
               CASE
+                  WHEN "STG_CUSTOMER_MAPPING"."SHIPPING_COUNTRY" != 'US' THEN 'International'
                   WHEN "STG_CUSTOMER_MAPPING"."LEGACY_COUNTRY" != 'United States' THEN 'International'
                   ELSE "STG_CUSTOMER_MAPPING"."REGION_SUB"
               END

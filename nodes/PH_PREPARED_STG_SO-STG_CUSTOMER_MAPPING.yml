@@ -257,6 +257,20 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: a910dafe-82e4-46c6-a955-b5a7d2e3dfb3
+          stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: BILLING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 055c352e-249a-4058-816a-0657dbf6e5bc
+                stepCounter: 73e43e1d-8c0b-46af-9f50-0f81cf5b4701
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: 9917ea85-8ef0-4ccb-912a-39884a022b38
           stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
         config: {}
@@ -323,6 +337,20 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 740cbfc5-abcc-4657-9201-07cb79eb5e55
+                stepCounter: 73e43e1d-8c0b-46af-9f50-0f81cf5b4701
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 469f8590-4d71-4948-bae2-56172d4d59ac
+          stepCounter: 4ebd1d80-efcd-4322-aa76-f82b0e5caca5
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SHIPPING_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f95135a4-08c6-4156-b94a-99a0db2b5400
                 stepCounter: 73e43e1d-8c0b-46af-9f50-0f81cf5b4701
             transform: ""
       - appliedColumnTests: {}
@@ -579,9 +607,9 @@ operation:
           joinCondition: |-
             FROM {{ ref('PH_PREPARED_STG_SO', 'STG_NS_CUSTOMER_JOIN_SMWE') }} "STG_NS_CUSTOMER_JOIN_SMWE"
             LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_FILE_COUNTRIES') }} "STG_FILE_COUNTRIES"
-                ON "STG_NS_CUSTOMER_JOIN_SMWE"."LEGACY_COUNTRY_CODE" = "STG_FILE_COUNTRIES"."CODE"
+                ON COALESCE("STG_NS_CUSTOMER_JOIN_SMWE"."SHIPPING_COUNTRY", "STG_NS_CUSTOMER_JOIN_SMWE"."LEGACY_COUNTRY_CODE") = "STG_FILE_COUNTRIES"."CODE"
             LEFT JOIN {{ ref('PH_PREPARED_STG_SO', 'STG_FILE_REGION') }} "STG_FILE_REGION"
-                ON "STG_NS_CUSTOMER_JOIN_SMWE"."LEGACY_STATE" = "STG_FILE_REGION"."STATE"
+                ON COALESCE("STG_NS_CUSTOMER_JOIN_SMWE"."SHIPPING_STATE", "STG_NS_CUSTOMER_JOIN_SMWE"."LEGACY_STATE") = "STG_FILE_REGION"."STATE"
         name: STG_CUSTOMER_MAPPING
         noLinkRefs: []
   name: STG_CUSTOMER_MAPPING
